@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan Shoes</title>
+
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="stylesheet" href="./src/styles/responsive.css">
+</head>
+<body>
+  <header class="h1"><p>Ganhe R$ 10,00 de desconto no frete</p></header>
+  <header class="h2"><p>JordanShoes</p></header>
+
+  <div class="header">
+    <picture>
+          <source srcset="./src/img/Vector.png" media="(min-width: 750px)" class="parallax">
+
+          <img src="./src/img/VectorMobile.png" alt="" class="parallax">
+    </picture>
+
+    <h3>A melhor loja de Jordan</h3>
+    <p id="desc"></p>
+  </div>
+
+<div class="emphasis">
+  <h3>Destaques</h3>
+  <p>Frete grátis e chinelo de brinde é aqui, aproveite por tempo limitado. </p>
+</div>
+
+<div class="containerRow">
+  <div class="row1">
+    <div class="row">
+      <img src="./src/img/1.png" class="img">
+    </div>
+    <div class="row">
+      <img src="./src/img/2.png" class="img">
+    </div>
+    <div class="row" id="img3">
+      <img src="./src/img/3.png" class="img">
+    </div>
+    <div class="row" id="img4">
+      <img src="./src/img/4.png" class="img">
+    </div>
+  </div>
+  
+  <div class="row2">
+    <div class="row">
+      <img src="./src/img/5.png" class="img">
+    </div>
+    <div class="row">
+      <img src="./src/img/6.png" class="img">
+    </div>
+    <div class="row">
+      <img src="./src/img/7.png" class="img">
+    </div>
+    <div class="row">
+      <img src="./src/img/8.png" class="img">
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>Desenvolvido por <a class="linkFooter" href="https://github.com/IuryGames1/" target="_blank">Iury</a></p>
+  <p>&copy; Todos os direitos reservados.</p>
+  <p>Layout desenvolvido por <a class="linkFooter" href="https://www.instagram.com/iuricode/" target="_blank">Iuri Code</a></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  var typed = new Typed('#desc', {
+    strings: ["O tênis Jordan é fruto de uma velha e forte parceria entre a Nike e o jogador Michael Jordan."],
+    typeSpeed: 40,
+    showCursor: false
+  });
+</script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '50px',
+            duration: 1000,
+            reset: true
+        });
+
+        ScrollReveal().reveal('.row', { delay: 100 });
+        ScrollReveal().reveal('.row1', { delay: 100 });
+        ScrollReveal().reveal('.row2', { delay: 100 });
+        </script>
+
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+<script>
+  var image = document.getElementsByClassName('parallax');
+  new simpleParallax(image, {
+	delay: .6,
+	transition: 'cubic-bezier(0,0,0,1)',
+  scale: 1.5
+});
+</script>
+</body>
+</html>

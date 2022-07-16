@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Nunito:wght@700&family=Roboto:wght@700&family=Sora:wght@400;600&display=swap');
+
+:root {
+    --blue: #0F9AFE;
+    --white: #FFFFFF;
+    --white-200: #EFF8FF;
+    --gray-light: #DBDBDB;
+    --gray: #6E7275;
+    --gray-200: #293145;
+    
+
+    --ff-i: 'Inter', sans-serif;
+    --ff-n: 'Nunito', sans-serif;
+    --ff-r: 'Roboto', sans-serif;
+    --ff-s: 'Sora', sans-serif;
+}
+
+/* Responsonvidade */
+
+@media screen and (max-width: 1228px) {
+
+    .section-intro, .section-howitworks, .section-app, .section-plans, .section-contact {
+        padding: 5rem 6%;
+    }
+
+    .header {
+        padding: 0 6%;
+    }
+
+    .section-intro {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .intro-img {
+        width: 70%;
+    }
+
+    .intro-img-div {
+        width: 100%;
+        display: flex;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .intro-title {
+        font-size: 2.5rem;
+    }
+
+    .app-img {
+        width: 35%;
+    }
+}
+
+
+
+@media screen and (max-width: 834px) {
+
+    .section-intro, .section-howitworks, .section-app, .section-plans, .section-contact {
+        padding: 5rem 6%;
+    }
+
+    .header {
+        padding: 0 6%;
+    }
+   
+    .menu-section {
+        display: flex;
+        position: relative;
+    }
+    
+    .menu-section .header-nav {
+        display: none;
+    }
+    
+    .menu-toggle {
+        display: block;
+        width: 40px;
+        height: 30px;
+        position: relative;
+        cursor: pointer;
+        top: -4px;
+    }
+
+    .one, .two, .three {
+        background-color: var(--gray-200);
+        width: 100%;
+        height: 5px;
+        margin: 6px auto;
+        position: relative;
+        transition-duration: 0.3s;
+    }
+
+    .menu-section.on {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: var(--gray-200);
+        width: 100vw;
+        height: 100vh;
+        z-index: 999;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-section.on .one {
+        background-color: var(--white);
+    }
+
+    .menu-section.on .three {
+        background-color: var(--white);
+    }
+
+    .menu-section.on .menu-toggle {
+        position: absolute;
+        top: 17px;
+        right: 6%;
+    }
+    
+    .menu-section.on .header-nav {
+        display: block;
+    }
+    
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .nav-list-item a {
+        color: var(--white);
+    }
+    
+    .menu-section.on .menu-toggle .one {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+    
+    .menu-section.on .menu-toggle .two {
+        display: none;
+    }
+    
+    .menu-section.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(1px, -2px);
+    }
+
+    .intro-img-div {
+        width: 100%;
+        display: flex;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .intro-img {
+        width: 50%;
+        
+    }
+
+
+
+    .app-img {
+        display: none;
+        position: absolute;
+    }
+
+    .section-app {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .app-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .app-desc {
+        width: 100%;
+    }
+
+    .contact-desc {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .intro-title {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .intro-button {
+        width: 9rem;
+        height: 2rem;
+        font-size: 14px;
+    }
+
+    .intro-img-div {
+        width: 100%;
+        display: flex;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .intro-img {
+        width: 70%;
+
+    }
+
+    .howitworks-title {
+        font-size: 2rem;
+    }
+
+    .howitworks-card-title {
+        font-size: 1rem;
+    }
+
+    .howitworks-desc {
+        font-size: 14px;
+    }
+
+    .app-main {
+        width: 100%;
+    }
+
+    .app-title {
+        font-size: 1.5rem;
+    }
+
+    .app-desc {
+        font-size: 14px;
+    }
+
+    .app-downloads {
+        gap: 1.5rem;
+    }
+
+    .app-googleplay, .app-applestore {
+        width: 9rem;
+        height: 2.7rem;
+    }
+
+    .plans-title {
+        font-size: 2rem;
+    }
+
+    .plans-desc {
+        width: 80%;
+        font-size: 14px;
+    }
+
+    .contact-title {
+        font-size: 2rem;
+    }
+
+    .contact-desc {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .contact-form input {
+        font-size: 14px;
+    }
+    
+    .footer-credit {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+
+    .app-downloads {
+        gap: 0.8em;
+    }
+
+    .app-googleplay, .app-applestore {
+        width: 8rem;
+        height: 2.4rem;
+    }
+
+    .plans-card, .plans-card-especial{
+        width: 18rem;
+    }
+
+    .contact-form input {
+        width: 15rem;
+    }
+}
+
+@media screen and (max-width: 280px) {
+
+
+    .app-downloads {
+        gap: 0.4rem;
+    }
+
+    .app-googleplay, .app-applestore {
+        width: 7rem;
+        height: 2rem;
+    }
+
+    .plans-card, .plans-card-especial{
+        width: 15rem;
+    }
+
+    .contact-form input {
+        width: 13rem;
+    }
+}

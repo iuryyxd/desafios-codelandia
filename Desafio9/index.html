@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iury - Portfólio</title>
+
+    <link rel="stylesheet" href="./src/styles/style.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h3>Portfólio</h3>
+            <div class="menu-section">
+                <div class="menu-toggle" onclick="openMenu()">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
+
+                <nav class="nav">
+                    <ul class="ul">
+                        <li class="li"><a href="#aboutme" class="link" onclick="linkClick()">Sobre mim</a></li>
+                        <li class="li"><a href="#projects" class="link" onclick="linkClick()">Projetos</a></li>
+                        <li class="li"><a href="#services" class="link" onclick="linkClick()">Serviços</a></li>
+                        <li class="li"><a href="#skills" class="link" onclick="linkClick()">Skills</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </header>
+
+        <section class="introduction">
+            <div class="intro">
+                <h3 class="hello"></h3>
+                <p class="desc-hello"></p>
+
+                <div class="buttons">
+                    <a href="#aboutme"><button class="aboutmeButton">Sobre mim</button></a>
+                    <a href="#contact"><button class="contactButton">Entre em contato</button></a>
+                </div>
+            </div>
+
+            <img src="./src/images/illustration.svg" alt="">
+        </section>
+
+        <section class="aboutme" id="aboutme">
+            <h3>Sobre mim</h3>
+
+            <p class="desc-aboutme">Olá! Primeiramente eu me chamo Iury, tenho 15 anos e atualmente sou desenvolvedor front-end. Eu programo faz alguns anos, porém eu não levava a sério na época. Bem, trabalho principalmente no desenvolvimento web, mas desejo, em breve, trabalhar com desenvolvimento mobile.</p>
+
+            <div class="contact" id="contact">
+                <div class="item-contact">
+                    <div class="emoji"><i class="fa-solid fa-face-smile fa-xl"></i></div>
+                    <p>Meu nome</p>
+                    <span>Iury</span>
+                </div>
+                <div class="item-contact">
+                    <div class="emoji"><i class="fa-brands fa-github fa-xl"></i></div>
+                    <p>Github</p>
+                    <span><a href="https://github.com/IuryGames1" target="_blank">Acessar</a></span>
+                </div>
+                <div class="item-contact">
+                    <div class="emoji"><i class="fa-brands fa-instagram fa-xl"></i></div>
+                    <p>Instagram</p>
+                    <span><a href="#aboutme">Em breve</a></span>
+                </div>
+                <div class="item-contact">
+                    <div class="emoji"><i class="fa-solid fa-phone fa-xl"></i></div>
+                    <p>Telefone</p>
+                    <span><a href="#aboutme">Em breve</a></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <h2>Projetos</h2>
+
+            <div class="portfolio">
+                <a href="https://jordanshoeswebsite.netlify.app" target="_blank" class="link-portfolio">
+                    <div class="portfolio-item">
+                        <div class="preview">
+                            <img src="./src/images/jordanshoes.png" alt="">
+                        </div>
+                        <p>JordanShoes</p>
+                        <span>Tecnologias: HTML e CSS.</span>
+                    </div>
+                </a>
+                <a href="https://loginpageweb.netlify.app" target="_blank" class="link-portfolio">
+                <div class="portfolio-item">
+                    <div class="preview">
+                        <img src="./src/images/loginpage.png" alt="">
+                    </div>
+                    <p>Login Page</p>
+                    <span>Tecnologias: HTML e CSS.</span>
+                </div>
+                </a>
+
+                <a href="https://codemojiwebsite.netlify.app" target="_blank" class="link-portfolio">
+                    <div class="portfolio-item">
+                        <div class="preview">
+                            <img src="./src/images/codemoji.png" alt="">
+                        </div>
+                        <p>Codemoji</p>
+                        <span>Tecnologias: HTML e CSS.</span>
+                    </div>
+                </a>
+
+                <a href="https://valoranttest.netlify.app" target="_blank" class="link-portfolio">
+                    <div class="portfolio-item">
+                        <div class="preview">
+                            <img src="./src/images/valorant.png" alt="">
+                        </div>
+                        <p>Valorant</p>
+                        <span>Tecnologias: HTML e CSS.</span>
+                    </div>
+                </a>
+                <a href="https://studioghibliwebsite.netlify.app" target="_blank" class="link-portfolio">
+                    <div class="portfolio-item">
+                        <div class="preview">
+                            <img src="./src/images/aviagemdechihiro.png" alt="">
+                        </div>
+                        <p>A viagem de Chihiro</p>
+                        <span>Tecnologias: HTML e CSS.</span>
+                    </div>  
+                </a>
+
+                <a href="https://websiteonepage.netlify.app" target="_blank" class="link-portfolio">
+                    <div class="portfolio-item">
+                        <div class="preview">
+                            <img src="./src/images/onepage.png" alt="">
+                        </div>
+                        <p>One Page</p>
+                        <span>Tecnologias: HTML e CSS.</span>
+                    </div>
+                </a>
+            </div>
+            
+        </section>
+
+
+        <section class="services-section" id="services">
+            <h3>Serviços</h3>
+
+            <div class="services">
+                <div class="service">
+                    <img src="./src/images/code.svg" alt="">
+                    <p>Criação de sites</p>
+                </div>
+
+                <div class="soon-service">
+                    <p class="soon-text">Em breve</p>
+                    <div class="service soon">
+                        <img src="./src/images/figma.svg" alt="" class="imgm">
+                        <p>UI Designer</p>
+                    </div>
+                </div>
+
+                <div class="service">
+                    <img src="./src/images/smartphone.svg" alt="" class="imgm">
+                    <p>Sites responsivos</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-section" id="skills">
+            <h3>Minhas skills</h3>
+
+            <div class="skills">
+                <div class="skill">
+                    <img src="/src/images/html5.svg" alt="">
+                    <p>HTML5</p>
+                </div>
+                <div class="skill">
+                    <img src="/src/images/css.svg" alt="" class="cssimg" >
+                    <p>CSS3</p>
+                </div>
+
+                <div class="soon-skill">
+                    <p class="soon-text">Em breve</p>
+                    <div class="skill soon">
+                        <img src="/src/images/js.svg" alt="">
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+                <div class="soon-skill">
+                    <p class="soon-text">Em breve</p>
+                    <div class="skill soon">
+                        <img src="/src/images/react.svg" alt="">
+                        <p>React</p>
+                    </div>
+                </div>
+            </div>
+              
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido com <i class="fas fa-heart"></i> por <a href="https://github.com/IuryGames1" target="_blank">Iury</a></p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/c907492a0c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        let typed = new Typed('.hello', {
+            strings: ["Olá, me chamo Iury :D"],
+            typeSpeed: 50,
+            showCursor: false
+        });
+        
+        let typed2 = new Typed('.desc-hello', {
+            strings: ["^2000 Desenvolvedor Front-End e Designer"],
+            typeSpeed: 50,
+            showCursor: false
+        });    
+    </script>
+    <script src="/src/js/menu.js"></script
+</body>
+</html>

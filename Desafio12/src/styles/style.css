@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap');
+
+* {
+    margin: 0; padding: 0; box-sizing: border-box; text-decoration: none; border: none;
+
+}
+
+:root {
+    --green: #5C913B;
+    --yellow: #FFA200;
+    --red: #CF3031;
+    --pink: #FFD4C9;
+
+    --white: #FEF6F4;
+    --gray: #616161;
+    --gray-200: #2E2E2E;
+
+}
+
+body {
+    font-family: 'Sora', sans-serif;
+    background-color: var(--white);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Header */
+
+.header {
+    width: 100%;
+    height: 28.125rem;
+    background: url('../assets/header-bg.png') no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.header h1 {
+    font-weight: 600;
+    font-size: 6rem;
+    color: var(--white);
+}
+
+.h1-i {
+    color: var(--yellow);
+}
+
+.h1-z {
+    color: var(--red);
+}
+
+.h1-z2 {
+    color: var(--green);
+}
+
+/* More Solds */
+
+.section-more-solds {
+    padding: 0 90px;
+    margin-top: 8.8125rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-more-solds .more-solds-title {
+    font-weight: 600;
+    font-size: 2.25rem;
+    text-align: center;
+    color: var(--gray-200);
+    margin-bottom: 5.5rem;
+}
+
+.more-solds {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 32px;
+    row-gap: 130px;
+}
+
+.more-sold {
+    width: 256px;
+    height: 275px;
+    background: var(--white);
+    -webkit-box-shadow: 0px 2px 34px -15px rgba(46,46,46,0.35);
+    -moz-box-shadow: 0px 2px 34px -15px rgba(46,46,46,0.35);
+    box-shadow: 0px 2px 34px -15px rgba(46,46,46,0.35);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}
+
+.img-sold {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: calc(-275px/5)
+}
+
+.icon-sold {
+    position: absolute;
+    top: calc(-275px/20);
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    background: var(--pink);
+    border: 2px solid var(--red);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-sold i {
+    color: var(--red);
+}
+
+.title-sold {
+    margin-top: 76px;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--gray-200);
+    margin-bottom: 8px;
+}
+
+.desc-sold {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: var(--gray);
+    width: 180px;
+    margin-bottom: 28px;
+}
+
+.price-sold {
+    font-weight: 600;
+    font-size: 32px;
+    color: var(--gray-200);
+}
+
+.button-sold {
+    width: 157px;
+    height: 31px;
+    background: var(--yellow);
+    border-radius: 25px;
+    position: absolute;
+    bottom: calc(-275px/19);
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--gray-200);
+}
+
+/* About us */
+
+.section-aboutus {
+    display: flex;
+    margin-top: 12rem;
+    width: 100%;
+    padding: 0 90px;
+    height: 600px;
+    background-color: #FCFCFC;
+    align-items: center;
+    justify-content: center;
+    gap: 145px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.img-aboutus {
+    width: 448px;
+    height: 501px;  
+}
+
+.aboutus-text {
+    margin-right: 50px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 24px;
+}
+
+.title-about {
+    font-weight: 600;
+    font-size: 36px;
+    color: var(--gray-200);
+}
+
+.desc-about {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--gray-200);
+    width: 458px;
+}
+
+.button-about {
+    width: 148px;
+    height: 39px;
+    background: var(--yellow);
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--gray-200);
+}
+
+/* Footer */
+
+.footer {
+    padding: 0 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    background: var(--white);
+    -webkit-box-shadow: 0px 2px 34px -15px rgba(46,46,46,0.35);
+    -moz-box-shadow: 0px 2px 34px -15px rgba(46,46,46,0.35);
+    box-shadow: 0px 2px 34px -15px rgba(46,46,46,0.35);
+}
+
+.footer p {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--gray-200);
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 1280px) {
+    .section-aboutus {
+        gap: 120px;
+    }
+    .img-aboutus {
+        width: 350px;
+        height: 420px;  
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .img-aboutus {
+        display: none;
+        position: absolute;
+    }
+
+    .aboutus-text {
+        margin-right: 0px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .header {
+        height: 17rem;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .header {
+        background: url('../assets/bg_mobile.png') no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+        height: 16rem;
+    }
+
+    .desc-about {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header h1 {
+        font-size: 70px;
+    }
+
+    .section-more-solds {
+        padding: 0 20px;
+    }
+
+    .more-solds-title {
+        font-size: 22px;
+    }
+
+    .more-sold {
+        width: 312px;
+        height: 275px;
+    }
+
+    .title-about {
+        font-size: 39px;
+    }
+
+    .desc-about {
+        font-size: 14px;
+        width: 330px;
+    }
+
+    .aboutus-text {
+        padding: 0 20px;
+    }
+
+    .button-about {
+        width: 100px;
+        height: 31px;
+        font-size: 14px;
+    }
+    
+    .footer {
+         padding: 0 20px;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .header {
+        height: 12rem;
+    }
+
+    .desc-about {
+        width: 300px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header {
+        height: 10rem;
+    }
+
+    .title-about {
+        font-size: 35px;
+       
+    }
+
+    .desc-about {
+        width: 280px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .header {
+        height: 10rem;
+    }
+
+    .header h1 {
+        font-size: 50px;
+    }
+
+    .desc-about {
+        width: 250px;
+        font-size: 12px;
+    }
+}
+
+
+

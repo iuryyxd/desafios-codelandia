@@ -1,0 +1,124 @@
+:root {
+    --blue: #3EA1DB;
+    --blue-dark: #574AE8;
+    --white: #FFF;
+  
+    --title: #313131;
+    --text: #B6B6B6;
+    
+    --linear: linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%);
+
+    --space: 16.875em;
+    --titlesize: 1.5rem;
+  }
+
+* { padding: 0; margin: 0; box-sizing: border-box; text-decoration: none; border: none; outline: none; }
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header {
+    width: 100%;
+    height: 15.625rem;
+    background: var(--linear);
+    padding: 0 var(--space);
+}
+
+.header h3 {
+    font-family: 'Lexenda Deca', sans-serif;
+    font-weight: 400;
+    font-size: var(--titlesize);
+    color: var(--white);
+    margin-top: 2.5625rem;
+    float: left;
+}
+
+.header p {
+    font-family: 'Lexenda Deca', sans-serif;
+    font-weight: 400;
+    font-size: var(--titlesize);
+    color: var(--white);
+    margin-top: 2.5625rem;
+    float: right;
+}
+
+.header form {
+    position: relative;
+}
+
+.header form input {
+    width: 100%;
+    height: 4.0625rem;
+    margin-bottom: 2.5625rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: white;
+    padding-left: 4rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 73px;
+}
+
+.header form button i{
+    color: white;
+    position: absolute;
+    top: 175px;
+    left: 25px;
+    cursor: pointer;
+}
+
+.cardsContainer {
+    margin-top: 100px;
+    display: flex;
+    padding: 0 var(--space);
+    flex-direction: column;
+}
+
+.card {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 10px #13131F0D;
+    padding: 24px;
+    margin-bottom: 50px;
+}
+
+.card small {
+    float: left;
+    color: #717171;
+    font-family: 'Lexenda Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.card i {
+    float: right;
+    color: #574AE8;
+    font-size: 16px;
+}
+
+.card i:hover {
+    color: #e228c3;
+}
+
+
+.card h2 {
+    color: #1A202C;
+    font-family: 'Lexenda Deca', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    margin-top: 30px;
+}
+
+.card p {
+    font-family: 'Lexenda Deca', sans-serif;
+    font-size: 16px;
+    margin-top: 8px;
+    font-weight: 400;
+    color: #717171;
+}

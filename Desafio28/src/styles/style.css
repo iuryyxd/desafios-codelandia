@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0; padding: 0; box-sizing: border-box; outline: none; border: none; text-decoration: none;
+}
+
+:root {
+    --red: #DA2535;
+    --gray: #515151;
+    --dark: #0B1421;
+    --white: #F9F9F9;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Container */
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+/* header */
+
+.header {
+    width: 100%;               
+    background: url(../images/wallpapper_head.png) no-repeat;
+    background-size: 100%;
+    padding: 0 7.5625rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav img {
+    width: 4rem;
+    height: 4rem;
+    margin-top: 2.5rem;
+}
+
+.nav nav {
+    margin-top: 3.75rem;
+}
+
+.nav nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.nav nav ul li a {
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.headerButtons {
+    display: flex;
+    gap: 3.1875rem;
+}
+
+.headerButtons .login {
+    background: none;
+    width: 4.5625rem;
+    height: 1.375rem;
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: var(--white);
+    margin-top: 3.8125rem;
+}
+
+.headerButtons .register {
+    width: 10.1875rem;
+    height: 2.875rem;
+    background-color: var(--red);
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: var(--white);
+    border-radius: 4px;
+    margin-top: 3.0625rem;
+}
+
+.header .intro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 63vh;
+    justify-content: center;
+}
+
+.header .intro h1{
+    color: var(--white);
+    font-style: italic;
+    font-weight: 700;
+    font-size: 4.875rem;
+    width: 29.3rem;
+    margin-bottom: 1rem;
+}
+
+.header .intro p {
+    font-weight: 400;
+    color: var(--white);
+    font-size: 1.2rem;
+    font-style: italic;
+    width: 29.3rem;
+    margin-bottom: 3rem;
+}
+
+.header .intro .readButton {
+    width: 10.1875rem;
+    height: 2.875rem;
+    background-color: var(--red);
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: var(--white);
+    border-radius: 4px;
+}
+
+/* Resultado do jogo */
+
+.gameResult {
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    align-items: center;
+    justify-content: center;
+    gap: 2.125rem;
+    padding: 8.4375rem 0;
+}
+
+.gameResult .name {
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--dark);
+}
+
+.gameResult .placar {
+    display: flex;
+    gap: .7rem;
+    font-size: 3.875rem;
+    font-weight: 600;
+}
+
+.gameResult .placar p {
+    color: var(--dark);
+}
+
+.gameResult .placar span {
+    color: var(--gray);
+}
+
+/* Welcome Section */
+
+.welcome-section {
+    width: 100%;
+    position: relative;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-section img {
+    width: 100%;
+    position: absolute;
+    height: 35rem;
+}
+
+.card-welcome {
+    width: 60vw;
+    height: auto;
+    padding: 2.5rem;
+    background: var(--white);
+    z-index: 9999;
+}
+
+.card-welcome .title {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.card-welcome .title .trace {
+    width: 3px;
+    margin-top: 0.6rem;
+    height: 20px;
+    background-color: var(--red);
+    margin-right: 1rem;
+}
+
+.card-welcome .title p {
+    color: var(--dark);
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.card-welcome .desc {
+    color: var(--gray);
+    font-weight: 300;
+    font-size: 1.125rem;
+    margin-bottom: 2.25rem;
+}
+
+.card-welcome .readMore {
+    color: var(--red);
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+
+/* Notícias */
+
+.news-section {
+    margin-top: 7.8125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-news {
+    display: flex;
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--dark);
+    align-self: flex-start;
+    margin-left: 7.5625rem;
+}
+
+.news-section .title-news .trace {
+    width: 3px;
+    margin-top: 0.6rem;
+    height: 20px;
+    background-color: var(--red);
+    margin-right: 1rem;
+}
+
+.cards-news {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 7.5625rem;
+    margin-top: 3.5rem;
+}
+
+.card-news {
+    width: 21rem;
+    height: auto;
+}
+
+.card-news img {
+    width: 100%;
+}
+
+.card-news .photoby {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card-news .photoby p {
+    color: var(--red);
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.card-news .photoby span {
+    color: rgba(11, 20, 33, 0.90);
+    font-weight: 300;
+    font-size: 0.875rem;
+}
+
+.news {
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: var(--dark);
+}
+
+.morenews-button {
+    margin-top: 3.25rem;
+    width: 12.0625rem;
+    height: 2.875rem;
+    background: var(--red);
+    border-radius: 4px;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 7.8125rem;
+    width: 100%;
+    height: auto;
+    background-color: var(--dark);
+    display: flex;
+    padding: 3.5rem 7.5625rem;
+    color: var(--white);
+    gap: 12.8125rem;
+}
+
+.languages h5, .socialmedias h5, .teams h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.languages ul, .socialmedias ul, .teams ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.4375rem;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.credit {
+    font-weight: 700;
+    color: var(--white);
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-size: .8rem;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1024px) {
+    .header {
+        padding: 0 4.5rem;
+    }
+
+    .header .intro p {
+        margin-bottom: 1.5rem;
+    }
+
+    .title-news {
+        margin-left: 4.5rem;
+    }
+
+    .cards-news {
+        padding: 0 4.5rem;
+    }
+
+    .card-news {
+        width: 17.5rem;
+    }
+
+    footer {
+        padding: 3.5rem 4.5rem;
+        gap: 7rem;
+    }
+
+}
+

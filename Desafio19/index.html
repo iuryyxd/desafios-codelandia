@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rachi</title>
+
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="stylesheet" href="./src/styles/mobile.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-logo">
+            <div class="logo-shapes">
+                <div class="logo-shape1"></div>
+                <div class="logo-shape2"></div>
+            </div>
+
+            <p class="logo-name">Rachi</p>
+        </div>
+
+        <div class="menu-section">
+            <div class="menu-toggle" onclick="openMenu()">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+
+            <nav class="header-nav">
+                <ul class="nav-list">
+                    <li class="nav-list-item"><a href="#howitworks" onclick="linkClick()">Funcionalidades</a></li>
+                    <li class="nav-list-item"><a href="#app" onclick="linkClick()">App</a></li>
+                    <li class="nav-list-item"><a href="#plans" onclick="linkClick()">Planos</a></li>
+                    <li class="nav-list-item"><a href="#contact" onclick="linkClick()">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section-intro">
+        <div class="intro">
+            <h2 class="intro-title">Rachi,<br> é tudo que você<br> precisa em um só lugar.</h2>
+            <a href="#" class="intro-button">Cadastre-se</a> 
+        </div>
+
+        <div class="intro-img-div">
+            <img src="./src/assets/working_png.png" alt="imagem trabalhe de qualquer lugar" class="intro-img" title="Trabalhe de qualquer lugar">
+        </div>
+       
+    </section>
+
+    <section class="section-howitworks" id="howitworks">
+        <h2 class="howitworks-title">Como funciona</h2>
+
+        <div class="howitworks-cards">
+            <div class="howitworks-card">
+                <span class="iconify howitworks-card-icon" data-icon="uil:user-plus" style="color: #0f9afe;"></span>
+                <p class="howitworks-card-title">Crie conexões</p>
+                <span class="howitworks-card-desc">Lorem ipsum dolor sit amet, consecteteu.</span>
+            </div>
+
+            <div class="howitworks-card">
+                <span class="iconify howitworks-card-icon" data-icon="uil:shield-check" style="color: #0f9afe;"></span>
+                <p class="howitworks-card-title">100% gratuito</p>
+                <span class="howitworks-card-desc">Lorem ipsum dolor sit amet, consecteteu.</span>
+            </div>
+
+            <div class="howitworks-card">
+                <span class="iconify howitworks-card-icon" data-icon="uil:smile" style="color: #0f9afe;"></span>
+                <p class="howitworks-card-title">Compartilhamento</p>
+                <span class="howitworks-card-desc">Lorem ipsum dolor sit amet, consecteteu.</span>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-app" id="app">
+        <div class="app-main">
+            <h2 class="app-title">Baixe nosso app para desfrutar mais!</h2>
+            <p class="app-desc">Amet in elementum nulla scelerisque dui, egestas at. Elit consectetur turpis elementum amet vitae et etiam nec. Varius volutpat hac adipiscing tincidunt pretium.</p>
+
+            <div class="app-downloads">
+                <img src="./src/assets/playstore.png" alt="playstore download" class="app-googleplay" title="Baixe na Playstore">
+                <img src="./src/assets/appstore.png" alt="appstore download" class="app-applestore" title="Baixe na AppStore">
+            </div>
+        </div>
+
+
+        <img src="./src/assets/notifications_svg.svg" alt="imagem notificações" class="app-img" title="Novas notificações">
+    </section>
+
+    <section class="section-plans" id="plans">
+        <h2 class="plans-title">Nossos Planos</h2>
+        <p class="plans-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.</p>
+
+        <div class="plans-cards">
+            <div class="plans-card">
+                <h3 class="plans-card-title">Bronze</h3>
+
+                <div class="plans-card-price">
+                    <span class="price-type">R$</span>
+                    <span class="price-number">28</span>
+                    <span class="price-permonth">/mês</span>
+                </div>
+
+                <p class="plans-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.</p>
+
+                <a href="#"><button class="plans-card-button">Assinar</button></a>
+            </div>
+
+            <div class="plans-card-especial">
+                <h3 class="plans-card-title-especial">Prata</h3>
+
+                <div class="plans-card-preferred">PREFERIDO</div>
+
+                <div class="plans-card-price-especial">
+                    <span class="price-type">R$</span>
+                    <span class="price-number">57</span>
+                    <span class="price-permonth">/mês</span>
+                </div>
+
+                <p class="plans-card-desc-especial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.</p>
+
+                <a href="#"><button class="plans-card-button">Assinar</button></a>
+            </div>
+
+            <div class="plans-card">
+                <h3 class="plans-card-title">Ouro</h3>
+
+                <div class="plans-card-price">
+                    <span class="price-type">R$</span>
+                    <span class="price-number">94</span>
+                    <span class="price-permonth">/mês</span>
+                </div>
+
+                <p class="plans-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.</p>
+
+                <a href="#"><button class="plans-card-button">Assinar</button></a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section-contact" id="contact">
+        <h2 class="contact-title">Contato</h2>
+        <p class="contact-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.</p>
+
+        <form action="" class="contact-form" id="contact-form">
+            <input type="email" name="email" id="email" placeholder="Seu melhor e-mail">
+            <button form="contact-form" class="contact-button">Enviar</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <span class="footer-credit">&copy; Rachi - Todos os direitos reservados.</span>
+    </footer>
+
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script src="./src/js/menu.js"></script>
+</body>
+</html>

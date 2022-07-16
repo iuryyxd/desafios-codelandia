@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Nunito:wght@700&family=Roboto:wght@700&family=Sora:wght@400;600&display=swap');
+
+* {
+    margin: 0; padding: 0; box-sizing: border-box; 
+}
+
+button {
+    border: none; outline: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+:root {
+    --blue: #0F9AFE;
+    --white: #FFFFFF;
+    --white-200: #EFF8FF;
+    --gray-light: #DBDBDB;
+    --gray: #6E7275;
+    --gray-200: #293145;
+    
+
+    --ff-i: 'Inter', sans-serif;
+    --ff-n: 'Nunito', sans-serif;
+    --ff-r: 'Roboto', sans-serif;
+    --ff-s: 'Sora', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/* Cabeçalho */
+
+.header {
+    width: 100%;
+    height: 4rem;
+    background: var(--white);
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    display: flex;
+    gap: 12px;
+}
+
+.logo-shapes {
+    width: 1.5rem;
+    height: 2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-shape1 {
+    width: 0.9rem;
+    height: 0.9rem;
+    background: var(--blue);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    left: 2px;
+}
+
+.logo-shape2 {
+    width: 0.9rem;
+    height: 0.9rem;
+    background: var(--gray-200);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    top: 12px;
+    left: 6px;
+}
+
+
+.logo-name {
+    font-family: var(--ff-s);
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--gray-200);
+}
+
+
+.nav-list {
+    display: flex;
+    gap: 4rem;
+}
+
+.nav-list-item a {
+    font-family: var(--ff-i);
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--gray);
+    position: relative;
+}
+
+.nav-list-item a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: var(--blue);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .nav-list-item a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .nav-list-item a:hover {
+    color: var(--blue);
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+
+/* Introdução - Seção */
+
+.section-intro {
+    width: 100%;
+    background: var(--white-200);
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 10%;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 4rem;
+}
+
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.intro-title {
+    font-family: var(--ff-s);
+    font-weight: 600;
+    font-size: 3rem;
+    color: var(--gray-200);
+    line-height: 3.75rem;
+}
+
+.intro-button {
+    width: 12.5rem;
+    height: 3.5rem;
+    background: var(--blue);
+    box-shadow: 1px 3px 4px rgba(19, 125, 224, 0.5);
+    border-radius: 3rem;
+
+    font-family: var(--ff-i);
+    font-weight: 600;
+    color: var(--white);
+    font-size: 1.25rem;
+    transition: 0.5s all;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-button:hover {
+    letter-spacing: 1px;
+}
+
+
+/* Como funciona - Seção */
+
+.section-howitworks {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 10%;
+    row-gap: 4rem;
+}
+
+.howitworks-title {
+    font-family: var(--ff-s);
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: var(--gray-200);
+}
+
+.howitworks-cards {
+    display: flex;
+    gap: 6rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.howitworks-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 13rem;
+}
+
+.howitworks-card-icon {
+    width: 3.75rem;
+    height: 3.75rem;
+    margin-bottom: 1.9rem;
+}
+
+.howitworks-card-title {
+    font-family: var(--ff-s);
+    font-weight: 600;
+    color: var(--gray-200);
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
+.howitworks-card-desc {
+    font-family: var(--ff-i);
+    font-weight: 400;
+    color: var(--gray);
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* App - Seção */
+
+.section-app {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 10%;
+    background: var(--white-200);
+    flex-wrap: wrap;
+}
+
+.app-main {
+    width: 60%;
+}
+
+.app-title {
+    font-family: var(--ff-s);
+    font-weight: 600;
+    color: var(--gray-200);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.app-desc {
+    font-family: var(--ff-i);
+    font-weight: 400;
+    color: var(--gray);
+    font-size: 1rem;
+    line-height: 1.6rem;
+    width: 60%;
+    margin-bottom: 2.1rem;
+}
+
+.app-downloads {
+    display: flex;
+    gap: 1.75rem;
+}
+
+
+
+.app-img {
+    width: 23rem;
+}
+/* Planos - Seção */
+
+.section-plans {
+    width: 100%;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+.plans-title {
+    font-family: var(--ff-s);
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: var(--gray-200);
+    margin-bottom: 1rem;
+}
+
+.plans-desc {
+    font-family: var(--ff-i);
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: var(--gray);
+    width: 53%;
+    margin-bottom: 6rem;
+}
+
+.plans-cards {
+    display: flex;
+    gap: 1.8rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.plans-card {
+    display: flex;
+    flex-direction: column;
+    width: 20.5rem;
+    height: 29rem;
+    background: var(--white-200);
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.plans-card-title {
+    font-family: var(--ff-s);
+    font-weight: 600;
+    color: var(--gray-200);
+    font-size: 1.5rem;
+    margin-bottom: 3.6rem;
+}
+
+.plans-card-price {
+    height: 2.4rem;
+    font-family: var(--ff-r);
+    font-weight: 700;
+    color: var(--gray-200);
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-bottom: 2.9rem;
+}
+
+.price-type {
+    font-size: 1.25rem;
+    position: relative;
+    top: -.5rem;
+}
+
+.price-number {
+    font-size: 3rem;
+}
+
+.price-permonth {
+    font-size: 1.25rem;
+    position: relative;
+    bottom: -.6rem;
+}
+
+.plans-card-desc {
+    font-family: var(--ff-i);
+    font-weight: 400;
+    color: var(--gray);
+    width: 70%;
+    text-align: center;
+    margin-bottom: 3.6rem;
+}
+
+.plans-card-button {
+    width: 14rem;
+    height: 2.6rem;
+    border-radius: 3rem;
+    background: var(--blue);
+    color: var(--white);
+    font-family: var(--ff-n);
+    font-weight: 700;
+    font-size: 1.25rem;
+    box-shadow: 1px 3px 4px 0px #137DE080;
+
+    transition: 0.5s all;
+}
+
+.plans-card-button:hover {
+    letter-spacing: 2px;
+}
+
+.plans-card-especial {
+    display: flex;
+    flex-direction: column;
+    width: 20.5rem;
+    height: 29rem;
+    background: var(--gray-200);
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.plans-card-title-especial {
+    font-family: var(--ff-s);
+    font-weight: 600;
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-bottom: 13px;
+}
+
+.plans-card-preferred {
+    width: 10rem;
+    height: 1.6rem;
+    background: var(--blue);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--white);
+    letter-spacing: 0.2rem;
+    font-family: var(--ff-i);
+    font-weight: 600;
+    font-size: 14px;
+
+    margin-bottom: 3rem;
+}
+
+.plans-card-price-especial {
+    height: 2.4rem;
+    font-family: var(--ff-r);
+    font-weight: 700;
+    color: var(--white);
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-bottom: 2.9rem;
+}
+
+.plans-card-desc-especial {
+    font-family: var(--ff-i);
+    font-weight: 400;
+    color: var(--white);
+    width: 70%;
+    text-align: center;
+    margin-bottom: 3.6rem;
+}
+
+
+/* Contato - Seção */
+
+.section-contact {
+    width: 100%;
+    background: url(../assets/contact-bg.png) no-repeat;
+    background-size: cover;
+    padding: 5rem 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.contact-title {
+    font-family: var(--ff-s);
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.contact-desc {
+    font-family: var(--ff-i);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--gray-light);
+    width: 40%;
+    text-align: center;
+    line-height: 1.5rem;
+    margin-bottom: 5.8rem;
+}
+
+.contact-form {
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form input {
+    background: none;
+    border: none;
+    width: 18.75rem;
+    border-bottom: 2px solid var(--white);
+    outline: none;
+    color: var(--white);
+    font-size: 18px;
+}
+
+.contact-form input::placeholder {
+    color: var(--white);
+    font-family: var(--ff-i);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.contact-form input::-ms-input-placeholder {
+    color: var(--white);
+    font-family: var(--ff-i);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.contact-form input::-webkit-input-placeholder {
+    color: var(--white);
+    font-family: var(--ff-i);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.contact-button {
+    width: 7rem;
+    height: 2.3rem;
+    background: var(--blue);
+    border-radius: 3rem;
+    color: var(--white);
+    font-family: var(--ff-i);
+    font-weight: 500;
+    font-size: 18px;
+
+    transition: 0.5s all;
+}
+
+.contact-button:hover {
+    letter-spacing: 1px;
+}
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    height: 5rem;
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-credit {
+    font-family: var(--ff-s);
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: var(--gray-200);
+}
+
