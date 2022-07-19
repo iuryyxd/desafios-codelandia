@@ -13,6 +13,7 @@
 - [Desafio 09](https://iuryportfolio.netlify.app)
 
 - [Desafio 12](https://lapizzawebsite.netlify.app)
+- [Desafio 14](https://helpdogwebsite.netlify.app)
 - [Desafio 19](https://rachiwebsite.netlify.app)
 
 - [Desafio 28](https://psgwebsitechallenge.netlify.app) - Responsividade: Em desenvolvimento!
