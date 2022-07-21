@@ -1,0 +1,20 @@
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+input, button {
+    border: none;
+    outline: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}

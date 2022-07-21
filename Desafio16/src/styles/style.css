@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+
+    /* Cores */
+
+    --pink: #F7C7B9;
+    --red: #DA2535;
+    --white: #F9F9F9;
+    --gray: #8D8D8D;
+    --dark-gray: #404040;
+    --black-light: #161212;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--pink);
+    padding: 0 6% 7rem 6%;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-img {
+    margin-top: 20px;       
+}
+
+.logo-name {
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--black-light);
+
+    margin-top: 23px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 51px;
+    margin-top: 28px;
+}
+
+.list-item a {
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--black-light);
+}
+
+.section-intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    width: 30.5rem;
+}
+
+.intro-title {
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 52px;
+    color: var(--black-light);
+    width: 24rem;
+    margin-bottom: 1.5rem;
+}
+
+.intro-desc {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--dark-gray);
+    margin-bottom: 40px;
+    width: 28rem;
+}
+
+.intro-button {
+    width: 15rem;
+    height: 3rem;
+    background: var(--red);
+    border-radius: 8px;
+
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--white);
+}
+
+/* Seção - Acessório */
+
+.section-acessory {
+    width: 100%;
+    padding: 7rem 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.acessory-title {
+    font-weight: 600;
+    font-size: 3rem;
+    color: var(--black-light);
+    margin-bottom: 12px;
+}
+
+.acessory-desc {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.9rem;
+    text-align: center;
+    color: var(--dark-gray);
+    width: 40%;
+    margin-bottom: 2rem;
+}
+
+.acessory-cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 70px;
+}
+
+.acessory-card {
+    width: 198px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-title {
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: var(--black-light);
+    margin-bottom: 12px;
+}
+
+.card-desc {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--gray);
+    text-align: center;
+}
+
+/* Seção - Doação */
+
+.section-donation {
+    width: 100%;
+    padding: 6rem 6%;
+
+    display: flex;
+    align-items: center;
+    column-gap: 224px;
+
+    background-color: var(--pink);
+}
+
+.donation-title {
+    width: 77%;
+    margin-bottom: 1.5rem;
+
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 3.7rem;
+
+    color: var(--black-light);
+}
+
+.donation-desc {
+    width: 85%;
+    margin-bottom: 2rem;
+
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+    color: var(--dark-gray);
+}
+
+.donation-button {
+    width: 13rem;
+    height: 3rem;
+
+    background-color: var(--red);
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 12px;
+
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--white);
+}
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    padding: 2rem 6%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.footer-socialmedias {
+    display: flex;
+    column-gap: 43px;
+}
+
+.media-icon {
+    width: 40px;
+    height: 40px;
+
+    background: rgba(218, 37, 53, 0.15);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+

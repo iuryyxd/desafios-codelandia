@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+
+    /* Cores */
+
+    --pink: #F7C7B9;
+    --red: #DA2535;
+    --white: #F9F9F9;
+    --gray: #8D8D8D;
+    --dark-gray: #404040;
+    --black-light: #161212;
+}
+
+@media (max-width: 1237px) {
+
+    .section-donation {
+        column-gap: 95px;
+    }
+
+    .intro-img {
+        width: 40%;
+    }
+
+    .donation-img {
+        width: 40%;
+    }
+}
+
+@media (max-width: 940px) {
+
+    .intro-text {
+        width: 25rem;
+    }
+
+    .intro-title {
+        font-size: 2.5rem;
+    }
+
+    .intro-desc {
+        width: 23rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 834px) {
+
+
+    .intro-text {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .acessory-desc {
+        width: 70%;
+    }
+
+    .menu-section {
+        display: flex;
+        position: relative;
+        align-items: center;
+    }
+    
+    .nav-list {
+        display: none;
+    }
+    
+    .menu-toggle {
+        width: 40px;
+        height: 30px;
+        position: relative;
+        cursor: pointer;
+        margin-top: 13px;
+    }
+    
+    .one, .two {
+        background-color: var(--black-light);
+        width: 100%;
+        height: 4px;
+        margin: 6px 0;
+        position: relative;
+        transition-duration: 0.3s;
+    }
+    
+    .three {
+        background-color: var(--black-light);
+        width: 60%;
+        height: 4px;
+        margin: 0 0;
+        position: absolute;
+        transition-duration: 0.3s;
+        right: 0;
+    }
+    
+    
+    
+    .menu-section.on {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: var(--black-light);
+        width: 100vw;
+        height: 100vh;
+        z-index: 999;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .menu-section.on .one {
+        background-color: var(--white);
+    }
+    
+    .menu-section.on .three {
+        background-color: var(--white);
+        width: 100%;
+    }
+    
+    .menu-section.on .menu-toggle {
+        position: absolute;
+        top: 14.2px;
+        right: 6.8%;
+    }
+    
+    .menu-section.on .nav-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+    
+    .menu-section.on .list-item a {
+        color: #fff;
+        text-align: center;
+    }
+    
+    
+    .menu-section.on .menu-toggle .one {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+    
+    .menu-section.on .menu-toggle .two {
+        display: none;
+    }
+    
+    .menu-section.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(1px, -1px);
+    }
+
+    .intro-img {
+        display: none;
+        position: absolute;
+    }
+
+    .donation-img {
+        display: none;
+    }
+
+    .donation-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-socialmedias {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        row-gap: 40px;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .logo-name {
+        font-size: 15px;
+    }
+
+    .intro-title {
+        width: 251px;
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    .intro-desc {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .intro-button {
+        width: 90%;
+
+        font-size: 14px;
+    }
+
+    .acessory-title {
+        font-size: 2rem;
+    }
+
+    .acessory-desc {
+        font-size: 14px;
+        line-height: 21px;
+        width: 90%;
+    }
+
+    .card-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-desc {
+        font-size: 14px;
+    }
+
+    .donation-title {
+        font-size: 2rem;
+        line-height: 36px;
+        width: 80%;
+    }
+
+    .donation-desc {
+        font-size: 14px;
+    }
+
+    .donation-button {
+        width: 90%;
+
+        font-size: 14px;
+    }
+
+    .footer-logo {
+        display: none;
+        position: absolute;
+    }
+}
+
+@media (max-width: 373px) {
+    .intro-desc {
+        width: 90%;
+    }
+}

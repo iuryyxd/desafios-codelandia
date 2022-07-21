@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Natal Website</title>
+
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/mobile.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="header-nav">
+            <div class="header-logo">
+                <img src="./src/images/santa.svg" alt="" class="logo-img">
+                <span class="logo-name">Feliz Natal</span>
+            </div>
+
+            <div class="menu-section">
+
+                <div class="menu-toggle" onclick="openMenu()">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
+
+                <ul class="nav-list">
+                    <li class="list-item"><a href="#" onclick="linkClick()">Início</a></li>
+                    <li class="list-item"><a href="#acessory" onclick="linkClick()">Acessórios</a></li>
+                    <li class="list-item"><a href="#donation" onclick="linkClick()">Doação</a></li>
+                    <li class="list-item"><a href="#contact" onclick="linkClick()">Contato</a></li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <section class="section-intro">
+            <div class="intro-text">
+                <h1 class="intro-title">
+                    Feliz Natal e Feliz Ano Novo!
+                </h1>
+                <p class="intro-desc">Nessas festas de fim de ano mande um presente para a pessoa amada e compartilhe a alegria do Natal.</p>
+                <button class="intro-button"><span class="iconify" data-icon="uil:gift" style="color: white;" data-width="27"></span> Fazer uma doação</button>
+            </div>
+
+            <img src="./src/images/hands.svg" alt="" class="intro-img">
+        </section>
+    </header>
+
+    <section class="section-acessory" id="acessory">
+        <h1 class="acessory-title">Acessórios</h1>
+        <p class="acessory-desc">Nessas festas de fim de ano mande um presente para a pessoa amada e compartilhe a alegria do Natal.</p>
+
+        <div class="acessory-cards">
+            <div class="acessory-card">
+                <img src="./src/images/giving1.svg" alt="" class="card-img">
+                <h3 class="card-title">Presentes</h3>
+                <p class="card-desc">Eles são os melhores presentes que existem.</p>
+            </div>
+
+            <div class="acessory-card">
+                <img src="./src/images/giving2.svg" alt="" class="card-img">
+                <h3 class="card-title">Enfeites</h3>
+                <p class="card-desc">Dê uma decoração.</p>
+            </div>
+
+            <div class="acessory-card">
+                <img src="./src/images/giving4.svg" alt="" class="card-img">
+                <h3 class="card-title">Doces</h3>
+                <p class="card-desc">Aproveite os doces natalinos.</p>
+            </div>
+
+            <div class="acessory-card">
+                <img src="./src/images/giving3.svg" alt="" class="card-img">
+                <h3 class="card-title">Muito amor</h3>
+                <p class="card-desc">Aproveite os sentimentos que duram para sempre.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-donation" id="donation">
+        <img src="./src/images/shared.svg" alt="" class="donation-img">
+
+        <div class="donation-text">
+            <h1 class="donation-title">Comemore com muito amor!</h1>
+            <p class="donation-desc">Nestes feriados, festeje com muito amor e paz, oferecendo muitas bênçãos aos nossos entes queridos, amigos e vizinhos, desejando-lhes um Feliz Natal.</p>
+            <button class="donation-button"><span class="iconify" data-icon="uil:gift" style="color: white;" data-width="27"></span> Fazer doação</button>            
+        </div>
+    </section>
+
+    <footer class="footer" id="contact">
+        <div class="footer-logo">
+            <img src="./src/images/santa.svg" alt="" class="logo-img">
+            <span class="logo-name">Feliz Natal</span>
+        </div>
+
+        <div class="footer-socialmedias">
+            <div class="media-icon"><span class="iconify" data-icon="uil:twitter" style="color: #da2535;" data-width="27"></span></div>
+            <div class="media-icon"><span class="iconify" data-icon="uil:youtube" style="color: #da2535;" data-width="27"></span></div>
+            <div class="media-icon"><span class="iconify" data-icon="uil:linkedin" style="color: #da2535;" data-width="27"></span></div>
+            <div class="media-icon"><span class="iconify" data-icon="uil:instagram-alt" style="color: #da2535;" data-width="27"></span></div>
+            <div class="media-icon"><span class="iconify" data-icon="uil:facebook-f" style="color: #da2535;" data-width="27"></span></div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script src="./src/js/script.js"></script>
+</body>
+</html>
