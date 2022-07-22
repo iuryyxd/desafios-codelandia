@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodJP</title>
+
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/mobile.css">
+</head>
+<body>
+    <header class="header">
+        <span class="header-logo">Food<span style="color: #DA2535;">JP</span></span>
+        <div class="menu-section">
+            <div class="menu-toggle" onclick="openMenu()">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+                <div class="four"></div>
+            </div>
+
+            <ul class="header-nav">
+                <li class="nav-item"><a href="#" onclick="linkClick()">Início</a></li>
+                <li class="nav-item"><a href="#menu" onclick="linkClick()">Cardápio</a></li>
+                <li class="nav-item"><a href="#about" onclick="linkClick()">Sobre</a></li>
+                <button class="nav-button" onclick="linkClick()">Entrar</button>
+            </ul>
+        </div>
+        <button class="header-button" onclick="linkClick()">Entrar</button>
+    </header>
+
+    <section class="section-menu" id="menu">
+        <div class="menu-text">
+            <h1 class="menu-title">Comida Oriental</h1>
+            <p class="menu-desc">A culinária Japonesa é bastante equilibrada, sendo muito rica em peixes (ômega 3), vegetais, massas e ingredientes frescos.</p>
+            <button class="menu-button">Cardápio</button>
+        </div>
+
+        <img src="./src/img/sc1.png" alt="" class="menu-img">
+    </section>
+
+    <section class="section-readmore">
+        <img src="./src/img/sc2.png" alt="" class="readmore-img">
+
+        <div class="readmore-text">
+            <h1 class="readmore-title">Feita de forma tradicional</h1>
+            <p class="readmore-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <a href="#" class="readmore-link">Ler mais sobre o modo de preparo</a>
+        </div>
+    </section>
+
+    <section class="section-popular">
+        <h1 class="popular-title">Mais populares</h1>
+
+        <div class="popular-cards">
+            <div class="popular-card">
+                <img src="./src/img/p1.png" alt="" class="popular-card-img">
+                <h3 class="popular-card-title">Ramem de Frango</h3>
+                <p class="popular-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <span class="popular-card-price">R$ 30</span>
+            </div>
+
+            <div class="popular-card">
+                <img src="./src/img/p2.png" alt="" class="popular-card-img">
+                <h3 class="popular-card-title">Ramem Apimentado</h3>
+                <p class="popular-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <span class="popular-card-price">R$ 30</span>
+            </div>
+
+            <div class="popular-card">
+                <img src="./src/img/p3.png" alt="" class="popular-card-img">
+                <h3 class="popular-card-title">Ramem Tradicional</h3>
+                <p class="popular-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <span class="popular-card-price">R$ 30</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-feedback">
+        <h1 class="feedback-title">Comentários</h1>
+
+        <div class="feedback-cards">
+            <div class="feedback-card">
+                <img src="./src/img/profile1.png" alt="" class="feedback-card-profile">
+                <h4 class="feedback-card-author">Daniele Almeida</h4>
+                <p class="feedback-card-desc">Ótimo serviço! Encantada com a qualidade dos pratos.</p>
+                <img src="./src/img/stars.png" alt="" class="feedback-card-stars">
+            </div>
+
+            <div class="feedback-card">
+                <img src="./src/img/profile2.png" alt="" class="feedback-card-profile">
+                <h4 class="feedback-card-author">Ricardo França</h4>
+                <p class="feedback-card-desc">Não é apenas a comida excelente, o serviço torna a experiência especial.</p>
+                <img src="./src/img/stars.png" alt="" class="feedback-card-stars">
+            </div>
+        </div>
+    </section>
+
+    <section class="section-location">
+        <h1 class="location-title">Localização</h1>
+        <img src="./src/img/location.png" alt="" class="location-img">
+
+        <form class="location-form" id="form">
+            <span class="iconify location-icon" data-icon="uil:location-point" style="color: #da2535;" data-width="30"></span>
+            <input type="search" class="location-input" placeholder="Localização para entrega">
+            <button class="location-button" form="form"><span class="iconify search-icon" data-icon="uil:search" style="color: white;" data-width="30"></span> <span class="text-button">Buscar</span></button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <h1 class="footer-title">Food<span style="color: #DA2535;">JP</span></h1>
+
+        <nav class="nav-cards">
+            <ul class="nav-card">
+                <h2 class="nav-title" id="about">
+                    Contato
+                </h2>
+                <li class="nav-item">+55 21 9999-9999</li>
+                <li class="nav-item">email@gmail.com</li>
+            </ul>
+
+            <ul class="nav-card">
+                <h2 class="nav-title">
+                    Sobre nós
+                </h2>
+                <li class="nav-item">Menu</li>
+                <li class="nav-item">Valores</li>
+                <li class="nav-item">Valores</li>
+            </ul>           
+
+            <ul class="nav-card">
+                <h2 class="nav-title">
+                    Serviços
+                </h2>
+                <li class="nav-item">Entrega</li>
+                <li class="nav-item">Retirada</li>
+            </ul>    
+        </nav>
+    </footer>
+
+
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script type="text/javascript" src="./src/js/script.js"></script>
+</body>
+</html>                                                                                                                                                                 

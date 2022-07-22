@@ -1,0 +1,42 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+a {
+	text-decoration: none; 
+}
+
+button, input {
+	border: none;
+	outline: none;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+ul, li {
+	list-style: none;
+}
+
+
+::-webkit-input-placeholder { /* Edge */
+  color: #292929;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #292929;
+}
+
+::placeholder {
+  color: #292929;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance:none;
+}
+
+html, body {
+	scroll-behavior: smooth;
+}
