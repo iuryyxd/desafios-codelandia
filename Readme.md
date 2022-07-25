@@ -17,5 +17,6 @@
 - [Desafio 16](https://feliznatalwebsite.netlify.app)
 - [Desafio 19](https://rachiwebsite.netlify.app)
 
+- [Desafio 25](https://homeyouwebsite.netlify.app)
 - [Desafio 27](https://foodjpwebsite.netlify.app)
 - [Desafio 28](https://psgwebsitechallenge.netlify.app) - Responsividade: Em desenvolvimento!

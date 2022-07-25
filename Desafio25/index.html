@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HomeYou</title>
+
+	<link rel="stylesheet" href="./src/styles/style.css">
+	<link rel="stylesheet" href="./src/styles/reset.css">
+	<link rel="stylesheet" href="./src/styles/mobile.css">
+</head>
+<body>
+	<header class="header">
+		<div class="header-logo">
+			<div class="logo-icon">
+				<span class="iconify" data-icon="uil:home-alt" style="color: white;" data-width="24"></span>
+			</div>
+			<span class="logo-name">HOMEYOU</span>
+		</div>
+
+        <div class="menu-section">
+        	<div class="menu-toggle" onclick="openMenu()">
+        		<div class="one"></div>
+        		<div class="two"></div>
+        		<div class="three"></div>
+        	</div>
+
+        	<ul class="header-navbar">
+        		<li class="navbar-item"><a href="#" onclick="linkClick()">Início</a></li>
+        		<li class="navbar-item"><a href="#galery" onclick="linkClick()">Galeria</a></li>
+        		<li class="navbar-item"><a href="#contact" onclick="linkClick()">Contato</a></li>
+        	</ul>
+
+        	<div class="header-icons">
+        		<a href="#"><span class="iconify icon-header" data-icon="uil:user" data-width="20"></span></a>
+
+        		<a href="#"><span class="iconify icon-header" data-icon="uil:heart-alt" data-width="20"></span></a>
+
+        		<a href="#"><span class="iconify icon-header" data-icon="uil:search" data-width="20"></span></a>
+        	</div>
+        </div>
+	</header>
+
+
+	<section class="home-section">
+		<div class="home-text">
+			<h1 class="home-title">Ajudar você a encontrar o melhor conforto, é nossa prioridade.</h1>
+			<p class="home-desc">Encontre uma variedade de propriedades que combinam com você. Esqueça todas as dificuldades em encontrar uma residência</p>
+			<div class="home-ctas">
+				<a href="#"><button class="home-button">Entre em contato</button></a>
+				<a href="#" class="home-link">Mais sobre nós</a>
+			</div>
+		</div>
+
+		<img src="./src/assets/house.png" alt="" class="home-img">
+	</section>
+
+	<section class="minimalism-section">
+
+		<div class="minimalism-images">
+			<div class="img-shape"></div>
+			<img src="./src/assets/minimalism.png" class="minimalism-img">
+		</div>
+
+		<div class="minimalism-text">
+			<div class="minimalism-info">
+				<h1 class="minimalism-title">Design Minimalista</h1>
+				<p class="minimalism-desc">Móveis apenas essenciais e com design moderno, além de revestimentos bonitos e em cores neutras para manter a casa sempre com um estilo clean e suave.</p>
+			</div>
+
+			<a href="#" class="minimalism-link">Quero saber mais sobre os designs</a>
+		</div>
+
+	</section>
+
+	<section class="galery-section" id="galery">
+		<h1 class="galery-title">Galeria</h1>
+		<p class="galery-desc">Se você está entediado com a aparência da decoração de interiores da casa comuns, trabalhamos com designs diferentes e inovadores.</p>
+
+		<div class="galery-cards">
+			<img src="./src/assets/galery1.png" alt="" class="galery-img">
+            <img src="./src/assets/galery2.png" alt="" class="galery-img">
+			<img src="./src/assets/galery3.png" alt="" class="galery-img">
+		</div>
+	</section>
+
+	<section class="budget-section">
+		<h1 class="budget-title">Orçamento</h1>
+		<p class="budget-desc">Interessado em entrar em contato com um de nossos profissionais?</p>
+		<a href="#"><button class="budget-button">Entre em contato</button></a>
+	</section>
+
+	<footer class="footer">
+		<div class="logo-icon">
+			<span class="iconify" data-icon="uil:home-alt" style="color: white;" data-width="24"></span>
+		</div>
+
+		<nav class="footer-nav">
+			<ul class="nav-list">
+				<h4 class="nav-title">Produtos</h4>
+				<li class="list-item">Mobilia</li>
+				<li class="list-item">Segurança</li>
+				<li class="list-item">Design Interior</li>
+			</ul>
+
+			<ul class="nav-list">
+				<h4 class="nav-title">Mais Informações</h4>
+				<li class="list-item">Contrato</li>
+				<li class="list-item">Sobre nós</li>
+				<li class="list-item">Termos e condições</li>
+			</ul>
+
+			<ul class="nav-list">
+				<h4 class="nav-title">Redes Sociais</h4>
+				<li class="list-item">Pinterest</li>
+				<li class="list-item">Facebook</li>
+				<li class="list-item">Instagram</li>
+			</ul>
+		</nav>
+	</footer>
+
+	<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+	<script src="./src/js/app.js"></script>
+</body>
+</html>

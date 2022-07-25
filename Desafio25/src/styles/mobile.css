@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+:root {
+	--white: #FFFFFF;
+	--white-200: #E7E7E7;
+	--black: #272727;
+	--gray: #797979;
+}
+
+@media (max-width: 1116px) {
+	.home-img, .minimalism-images  {
+		display: none;
+		position: absolute;
+	}
+
+	.home-section {
+		padding: 80px 9%;
+	}
+
+	.minimalism-text {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	.minimalism-info {
+		width: 70%;
+	}
+
+	.home-text, .minimalism-text {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.footer .logo-icon {
+		display: none;
+		position: absolute;
+	}
+}
+
+@media (max-width: 868px) {
+	
+	.header-navbar, .header-icons {
+		display: none;
+	}
+
+	.menu-section {
+        display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		width: 100%;
+		height: 100%;
+		position: relative;
+    }
+
+	.menu-toggle {
+		width: 28px;
+		display: flex;
+		flex-direction: column;
+		gap: 6px;
+	}
+
+	.one, .two {
+		width: 100%;
+		height: 2px;
+		background-color: var(--black);
+
+		transition-duration: 0.5s;
+	}
+
+	.three {
+		width: 50%;
+		height: 2px;
+		background-color: var(--black);
+		align-self: flex-end;
+
+		transition-duration: 0.5s;
+	}
+
+	.menu-section.on {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: var(--black);
+        width: 100vw;
+        height: 100vh;
+        z-index: 9;
+		padding: 20px 9%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 90px;
+    }
+
+	.menu-section.on .one, .menu-section.on .two, .menu-section.on .three {
+		background-color: var(--white);
+	}
+
+	.menu-section.on .menu-toggle .one {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .menu-section.on .menu-toggle .two {
+        display: none;
+    }
+    
+    .menu-section.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(1px, -1px);
+		width: 100%;
+    }
+
+	.menu-section.on .header-navbar, .menu-section.on .header-icons {
+		display: block;
+	}
+
+	.menu-section.on .header-navbar .navbar-item a {
+		color: var(--white);
+	}
+
+	.menu-section.on .header-icons .icon-header {
+		color: var(--white);
+	}
+
+	.menu-section.on .header-navbar {
+		display: flex;
+		margin: 0;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.menu-section.on .header-icons {
+		display: flex;
+	}
+
+	.menu-section.on .menu-toggle {
+        position: absolute;
+        top: 40px;
+        right: 9%;
+    }
+
+
+	
+}
+
+@media (max-width: 500px) {
+	.logo-icon {
+		width: 30px;
+		height: 30px;
+	}
+
+	.logo-name {
+		font-size: 1rem;
+	}
+
+
+	.home-text, .minimalism-text {
+		align-items: flex-start;
+		justify-content: flex-start;
+		text-align: left;
+		width: 100%;
+	}
+
+	.home-title {
+		font-size: 1.7rem;
+		width: 100%;
+	}
+
+	.home-desc {
+		font-size: 1rem;
+	}
+
+	.home-button {
+		width: 147px;
+		height: 31px;
+		font-size: 12px;
+	}
+
+	.home-link {
+		font-size: 12px;
+	}
+
+	.minimalism-text {
+		align-items: center;
+	}
+
+	.minimalism-info {
+		width: 100%;
+	}
+
+	.minimalism-title, .galery-title, .budget-title {
+		font-size: 1.5rem;
+	}
+
+	.minimalism-link {
+		font-size: 1rem;
+	}
+
+	.minimalism-desc, .galery-desc, .budget-desc {
+		font-size: 1rem;
+		width: 100%;
+	}
+
+	.galery-cards > img {
+		height: 19rem;
+	}
+
+	.budget-button {
+		width: 81vw;
+	}
+
+	.footer-nav {
+		display: flex;
+		gap: 80px;
+		margin-left: 0px;
+	}
+
+	.nav-title {
+		font-size: 1rem;
+	}
+
+	.list-item {
+		font-size: 12px;
+	}
+}

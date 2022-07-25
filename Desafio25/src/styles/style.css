@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+:root {
+	--white: #FFFFFF;
+	--white-200: #E7E7E7;
+	--black: #272727;
+	--gray: #797979;
+}
+
+
+body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Montserrat', sans-serif;
+	background-color: var(--white);
+}
+
+/* Header */
+
+.header {
+	width: 100%;
+	height: 100px;
+	padding: 20px 9%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header-logo {
+	display: flex;
+	align-items: center;
+}
+
+.logo-icon {
+	width: 40px;
+	height: 40px;
+	background-color: var(--black);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 1rem;
+}
+
+.logo-name {
+	font-weight: 600;
+	font-size: 1.5rem;
+	color: var(--black);
+}
+
+.menu-section {
+	display: flex;
+	align-items: center;
+}
+
+.header-navbar {
+	display: flex;
+	gap: 48px;
+	margin-right: 56px;
+}
+
+.navbar-item a {
+	font-weight: 500;
+	font-size: 18px;
+	color: var(--black);
+}
+
+.header-icons {
+	display: flex;
+	gap: 33px;
+}
+
+.icon-header {
+	color: var(--black);
+}
+
+/* Início - Seção */
+
+.home-section {
+	width: 100%;
+	padding: 0 9%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: var(--white-200);
+}
+
+.home-title {
+	width: 83%;
+	font-weight: 600;
+	font-size: 2.5rem;
+	color: var(--black);
+	margin-bottom: 1rem;
+}
+
+.home-desc {
+	width: 83%;
+	font-weight: 500;
+	font-size: 18px;
+	color: var(--gray);
+	margin-bottom: 2rem;
+}
+.home-ctas {
+	display: flex;
+	gap: 40px;
+	align-items: center;
+}
+
+.home-button {
+	width: 225px;
+	height: 46px;
+	background: var(--black);
+
+	font-size: 18px;
+	font-weight: 500;
+	color: var(--white);
+}
+
+.home-link {
+	font-weight: 500;
+	font-size: 18px;
+	color: var(--black);
+	text-decoration: underline;
+}
+
+.home-img {
+	width: 30rem;
+}
+
+/* Minimalista - Seção */
+
+.minimalism-section {
+	width: 100%;
+	padding: 60px 9%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.minimalism-images {
+	width: 50%;
+	height: auto;
+	position: relative;
+	margin-bottom: 40px;
+}
+
+.img-shape {
+	width: 390px;
+	height: 390px;
+	background: var(--black);
+}
+
+.minimalism-img {
+	width: 390px;
+	height: 390px;
+	position: absolute;
+	left: 50px;
+	top: 50px;
+	z-index: 2;
+}
+
+.minimalism-text {
+	display: flex;
+	flex-direction: column;
+	width: 49%;
+	gap: 1.5rem;
+}
+
+.minimalism-info {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 20px 20px;
+	background-color: var(--black);
+	gap: 20px;
+
+	color: var(--white);
+}
+
+.minimalism-title {
+	font-weight: 600;
+	font-size: 1.75rem;
+}
+
+.minimalism-desc {
+	font-weight: 500;
+	font-size: 1rem;
+}
+
+.minimalism-link {
+	font-weight: 500;
+	font-size: 18px;
+	color: var(--black);
+	text-decoration: underline;
+}
+
+/* Galeria - Seção */
+
+.galery-section {
+	width: 100%;
+	padding: 60px 9%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--white-200);
+}
+
+.galery-title {
+	font-weight: 600;
+	font-size: 2rem;
+	color: var(--black);
+	margin-bottom: 19px;
+}
+
+.galery-desc {
+	width: 70%;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 28.8px;
+	color: var(--gray);
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.galery-cards {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+
+.galery-cards > img {
+	width: 19rem;
+}
+
+/* Orçamento - Seção */
+
+.budget-section {
+	width: 100%;
+	padding: 78px 9%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.budget-title {
+	font-weight: 600;
+	font-size: 2rem;
+	color: var(--black);
+	margin-bottom: 17px;
+}
+
+.budget-desc {
+	width: 70%;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 28.8px;
+	color: var(--gray);
+	text-align: center;
+	margin-bottom: 36px;
+}
+
+.budget-button {
+	background-color: transparent;
+	border: 2px solid var(--black);
+
+	font-weight: 500;
+	font-size: 18px;
+	color: var(--black);
+	padding: 12px 32px;
+}
+
+/* Footer */
+
+.footer {
+	width: 100%;
+	padding: 90px 9%;
+	display: flex;
+	align-items: center;
+	background-color: var(--white-200);
+	flex-wrap: wrap;
+}
+
+.footer-nav {
+	display: flex;
+	gap: 117px;
+	margin-left: 69px;
+	flex-wrap: wrap;
+}
+
+.nav-list {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.nav-title {
+	font-weight: 600;
+	font-size: 18px;
+	color: var(--black);
+
+	margin-bottom: 5px;
+}
+
+.list-item {
+	font-weight: 400;
+	font-size: 18px;
+	color: var(--black);
+}
+
+
+
+
+
