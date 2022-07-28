@@ -1,0 +1,40 @@
+:root {
+    --purple: #873EFF;
+    --green: #04D361;
+    --dark: #0E091B;
+    --dark-200: #171228;
+    --gray: #AEAEAE;
+    --white: #F9F9F9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button, input {
+    border: none;
+    outline: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+::-webkit-scrollbar {
+   background-color: var(--gray);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--purple);
+}
+

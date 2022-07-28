@@ -3,7 +3,7 @@
 >Todos os layouts dos sites foram desenvolvidos por [Iuri Code](https://www.instagram.com/iuricode/)
 
 - [Desafio 01](https://blogdacodelandia.netlify.app)
-- [Desafio 02](jordanshoeswebsite.netlify.app)
+- [Desafio 02](https://jordanshoeswebsite.netlify.app)
 - [Desafio 03](https://websiteonepage.netlify.app)
 - [Desafio 04](https://loginpageweb.netlify.app)
 - [Desafio 05](https://studioghibliwebsite.netlify.app)
@@ -17,6 +17,7 @@
 - [Desafio 16](https://feliznatalwebsite.netlify.app)
 - [Desafio 19](https://rachiwebsite.netlify.app)
 
+- [Desafio 22](https://projetoscodelandia.netlify.app/)
 - [Desafio 25](https://homeyouwebsite.netlify.app)
 - [Desafio 27](https://foodjpwebsite.netlify.app)
 - [Desafio 28](https://psgwebsitechallenge.netlify.app) - Responsividade: Em desenvolvimento!

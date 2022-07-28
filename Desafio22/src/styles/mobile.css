@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,700;1,500&family=IBM+Plex+Mono:wght@400;500;600;700&family=Josefin+Sans:wght@700&display=swap');
+
+:root {
+    --purple: #873EFF;
+    --green: #04D361;
+    --dark: #0E091B;
+    --dark-200: #171228;
+    --gray: #AEAEAE;
+    --white: #F9F9F9;
+}
+
+@media (min-width: 2029px) {
+
+    .projects__section {
+        justify-content: space-between;
+    }
+
+    .projects__card {
+        width: 600px;
+    }
+}
+
+@media (min-width: 1348px) {
+
+    .projects__section {
+        justify-content: space-between;
+    }
+
+}
+
+@media (max-width: 820px) {
+    .header__link {
+        display: none;
+        position: absolute;
+    }
+
+    .projects__card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 645px) {
+    .header {
+        flex-direction: column;
+        gap: 50px;
+        margin-bottom: 20px;
+    }
+
+
+}
+@media (max-width: 500px) {
+    .projects__card {
+        width: 402px;
+    }
+
+    .card__img {
+        margin-bottom: 2rem;
+    }
+
+    .card__buttons {
+        gap: 10px;
+    }
+
+    .button__demo, .button__github {
+        width: 130px;
+        height: 40px;   
+    }
+
+    .header__logo {
+        font-size: 1rem;
+    }
+
+    .header__button {
+        width: 80vw;
+        font-size: 15px;
+    }
+
+    .intro__slogan {
+        font-size: 14px;
+    }
+
+    .intro__title {
+        font-size: 1.5rem;
+    }
+
+    .intro__section {
+        margin-bottom: 70px;
+    }
+
+    .card__title {
+        font-size: 22px;
+    }
+
+    .card__desc {
+        font-size: 1rem;
+    }
+
+    .button__demo, .button__github {
+        width: 130px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .footer {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .footer__copy > p {
+        font-size: 14px;
+    }
+
+
+
+}
+
+@media (max-width: 482px) {
+    .projects__card {
+        width: 402px;
+    }
+
+    .card__img {
+        height: 170px;
+    }
+
+    
+}
+
+@media (max-width: 482px) {
+    .projects__card {
+        width: 402px;
+    }
+
+    .card__img {
+        height: 170px;
+    }
+
+    
+}
+
+@media (max-width: 441px) {
+    .card__m {
+        width: 402px;
+    }
+
+    .card__m .card__img {
+        height: 140px;
+    }
+
+    
+}
+
+@media (max-width: 381px) {
+    .card__m {
+        width: 402px;
+    }
+
+    .card__m .card__img {
+        height: 120px;
+    }
+
+    
+}
+
+@media (max-width: 335px) {
+    .projects__card {
+        width: 290px;
+    }
+
+    .card__m .card__img {
+        height: 120px;
+    }
+
+    .button__demo, .button__github {
+        width: 100px;
+        height: 40px;
+        font-size: 15px;  
+    }
+
+    
+}
