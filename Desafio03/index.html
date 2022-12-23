@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Page</title>
+
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="stylesheet" href="./src/styles/var.css">
+    <link rel="stylesheet" href="./src/styles/responsive.css">
+    <script src="./src/scripts/script.js"></script>
+</head>
+<body>
+    <header class="container">
+        <div>
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu massa sit amet augue consectetur ullamcorper non ac massa.</p>
+            <button>Botão</button>
+        </div>
+       <img src="./src/images/imagem.png">
+    </header>
+
+    <section class="cards-container">
+
+        <div class="card1">
+            <div class="card">
+                <div style="background-color: var(--card1-color);"></div>
+                <h4>Título do card</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.</p>
+            </div>
+            <div class="card" id="c1">
+                <div style="background-color: var(--card2-color); "></div>
+                <h4>Título do card</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.</p>
+            </div>
+            <div class="card" id="c1">
+                <div style="background-color: var(--card3-color); "></div>
+                <h4>Título do card</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.</p>
+            </div>
+        </div>
+        
+        <div class="card2">
+            <div class="card">
+                <div style="background-color: var(--card4-color);"></div>
+                <h4>Título do card</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.</p>
+            </div>
+            <div class="card" id="c1">
+                <div style="background-color: var(--card5-color);"></div>
+                <h4>Título do card</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.</p>
+            </div>
+            <div class="card" id="c1">
+                <div style="background-color: var(--card6-color);"></div>
+                <h4>Título do card</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <h3>Entre em contato</h3>
+
+        <form action="" id="contactForm">
+            <input type="text" placeholder="Nome" autocomplete="off" required><br>
+            <input type="email" name="email" id="email" placeholder="E-mail" autocomplete="off" required><br>
+            <input type="tel" name="tel" id="tel" placeholder="Telefone" autocomplete="off" required><br>
+            <textarea name="msg" id="msg" cols="30" rows="10" form="contactForm" placeholder="Mensagem..." autocomplete="off" required></textarea><br>
+            <button form="contactForm">Enviar mensagem</button>
+        </form>
+    </footer>
+
+   <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '30px',
+            duration: 1000,
+            reset: true
+        });
+
+        ScrollReveal().reveal('.card', { delay: 100 });
+    </script>
+</body>
+</html>

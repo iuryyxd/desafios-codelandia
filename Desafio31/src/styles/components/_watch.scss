@@ -1,0 +1,110 @@
+.section__watch {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.watch__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--title-weight);
+    font-size: 30px;
+    text-align: center;
+    color: var(--dark);    
+    margin-bottom: 48px;
+}
+
+.title__dot {
+    background: #FF0000;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    margin-right: 1rem;
+}
+
+.section__watch .match {
+    margin-bottom: 40px;
+}
+
+.watch__video {
+    width: 100%;
+    height: 500px;
+    background: url('../assets/thumbnail.png');
+    background-size: cover;
+    border-radius: 4px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 56px;
+}
+
+.watch__video img {
+    z-index: 3;
+}
+
+.video__filter {
+    background: #1F1E1E;
+    opacity: 0.4;
+    position: absolute;   
+    width: 100%;
+    height: 100%; 
+}
+
+.comments__title {
+    font-weight: var(--title-weight);
+    font-size: 30px;
+    color: var(--dark);    
+    margin-bottom: 1rem;
+}
+
+.comments__subtitle {
+    font-weight: var(--text-weight);
+    font-size: 1rem;
+    color: var(--dark-200);
+    margin-bottom: 48px;
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 10px;
+}
+
+.comment {
+    width: 100%;
+    border: 2px solid var(--white-200);
+    height: 130px;
+    background: var(--white);
+    border-radius: 8px;    
+}
+
+.comment__author {
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;   
+    gap: 1rem;
+    width: 100%;
+    border-bottom: 2px solid var(--white-200);
+}
+
+.comment__message {
+    padding: 10px 16px;   
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.comment__message p:first-child {
+    font-weight: var(--text-weight);
+    font-size: 1rem;
+    color: var(--dark);
+}
+
+.comment__message p:last-child {
+    font-weight: var(--text-weight);
+    font-size: .8rem;
+    color: var(--red);
+}

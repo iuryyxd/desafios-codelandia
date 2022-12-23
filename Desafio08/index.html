@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codemoji</title>
+
+    <link rel="stylesheet" href="./src/styles/style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <p>CodeMoji</p>
+            <div class="header-buttons">
+                <button class="search"><img src="./src/images/search.svg" alt=""></button>
+                <button class="login"><span>FAZER LOGIN</span><img src="./src/images/user.svg"></button>
+            </div>
+        </header>
+
+        <section>
+            <span>lorem ipsum dolor sit amet</span>
+            <h2>Lorem ipsum<br>  dolor sit amet, consectetur adipiscing elit.</h2>
+
+            <div class="buttonSection">
+                <button class="createMemoji">CRIAR MEMOJI</button>
+                <button class="librayButton">VER BIBLIOTECA</button>
+            </div>
+
+            <div class="memoji1">
+                <img src="./src/images/Memoji Girls 10-9.png">
+            </div>
+            <div class="memoji2">
+                <img src="./src/images/Memoji Girls 3-11.png">
+            </div>
+            <div class="memoji3">
+            </div>
+            <img src="./src/images/Memoji Girls 2-10.png" class="memoji3-img">
+            <div class="memoji4">
+                <img src="./src/images/Memoji Boys 2-7.png">
+            </div>
+            <div class="memoji5">
+                <img src="./src/images/Memoji Boys 11-16.png">
+            </div>
+        </section>
+
+        <footer>
+            <div class="card">
+                <div class="trace"></div>
+                <h4>NIKOLA TESLA</h4>
+                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque nisl quis viverra tincidunt. ”</p>
+            </div>
+
+            <div class="card">
+                <div class="trace"></div>
+                <h4>STEVE JOBS</h4>
+                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque nisl quis viverra tincidunt. ”</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+         const sr = ScrollReveal({
+            origin: 'top',
+            distance: '50px',
+            duration: 1000,
+            reset: true
+        });
+
+        ScrollReveal().reveal('.card');
+    </script>
+    <script src="https://kit.fontawesome.com/c907492a0c.js" crossorigin="anonymous"></script>
+</body>
+</html>

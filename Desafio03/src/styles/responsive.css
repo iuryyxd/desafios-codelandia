@@ -1,0 +1,296 @@
+@import url('./var.css');
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .container {
+        width: 100%;
+        padding: 50px 20px;
+        height: 650px;
+    }
+
+    .container div h2 {
+        font-size: 30px;
+        width: 300px;
+    }
+
+    .container div p {
+        line-height: 30px;
+        width: 310px;
+        font-size: 15px;
+    }
+
+    .container img {
+        width: 250px;
+        height: 189px;
+        top: 0;
+        right: 0;
+        margin-right: 85px;
+        margin-top: 400px;
+    }
+
+    .cards-container {
+        padding: 50px 10px;
+    }
+
+    .card {
+        margin-bottom: 30px;
+    }
+
+    .card1 {
+        flex-direction: column;
+        margin-bottom: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card2 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #c1 {
+        margin-left: 0;
+    }
+
+    footer {
+        padding: 30px 10px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    footer form input {
+        width: 330px;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px;
+        position: relative;
+    }
+
+    footer form input:focus {
+        width: 330px;
+        height: 50px;
+    }
+
+    footer form textarea {
+        width: 330px;
+        height: 150px;
+        padding: 11px 15px;
+    }
+
+    footer form button {
+        width: 330px;
+        height: 50px;
+        position: absolute;
+    }
+
+
+  }
+
+@media only screen and (max-width: 360px) {
+    .container {
+        width: 100%;
+        padding: 50px 20px;
+        height: 650px;
+    }
+
+    .container div h2 {
+        font-size: 30px;
+        width: 300px;
+    }
+
+    .container div p {
+        line-height: 30px;
+        width: 310px;
+        font-size: 15px;
+    }
+
+    .container img {
+        width: 250px;
+        height: 189px;
+        top: 0;
+        right: 0;
+        margin-right: 60px;
+        margin-top: 400px;
+    }
+
+    .cards-container {
+        padding: 50px 10px;
+    }
+
+    .card {
+        margin-bottom: 30px;
+    }
+
+    .card1 {
+        flex-direction: column;
+        margin-bottom: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card2 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #c1 {
+        margin-left: 0;
+    }
+
+    footer {
+        padding: 30px 10px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    footer form input {
+        width: 330px;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px;
+        position: relative;
+    }
+
+    footer form input:focus {
+        width: 330px;
+        height: 50px;
+    }
+
+    footer form textarea {
+        width: 330px;
+        height: 150px;
+        padding: 11px 15px;
+    }
+
+    footer form button {
+        width: 330px;
+        height: 50px;
+        position: absolute;
+    }
+
+}
+
+
+@media only screen and (max-width: 280px) {
+    .container {
+        width: 100%;
+        padding: 50px 15px;
+        height: 650px;
+    }
+
+    .container div h2 {
+        font-size: 30px;
+        width: 250px;
+    }
+
+    .container div p {
+        line-height: 25px;
+        width: 245px;
+        font-size: 15px;
+    }
+
+    .container div button {
+        width: 135px;
+        height: 35px;
+    }
+
+    .container img {
+        width: 220px;
+        height: 169px;
+        top: 0;
+        right: 0;
+        margin-right: 35px;
+        margin-top: 400px;
+    }
+
+    .cards-container {
+        padding: 50px 5px;
+    }
+
+    .card {
+        margin-bottom: 30px;
+        width: 260px;
+        height: 353px;
+    }
+
+    .card div {
+        width: 260px;
+        height: 160px;
+    }
+
+    .card h4 {
+        margin-left: 15px;
+        font-size: 26px;
+    }
+
+    .card p {
+        margin-left: 15px;
+        font-size: 17px;
+    }
+
+    .card1 {
+        flex-direction: column;
+        margin-bottom: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card2 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #c1 {
+        margin-left: 0;
+    }
+
+    footer {
+        padding: 30px 10px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    footer h3 {
+        font-size: 26px;
+    }
+
+    footer form input {
+        width: 250px;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px;
+        position: relative;
+    }
+
+    footer form input:focus {
+        width: 250px;
+        height: 50px;
+    }
+
+    footer form textarea {
+        width: 250px;
+        height: 150px;
+        padding: 11px 15px;
+    }
+
+    footer form button {
+        width: 250px;
+        height: 50px;
+        position: absolute;
+    }
+}

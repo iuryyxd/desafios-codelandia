@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="stylesheet" href="./src/styles/responsive.css.css">
+</head>
+<body>
+    <div class="container">
+        <div class="img">
+            <picture>
+                <source srcset="./src/images/aboutuspage.png" media="(min-width: 982px)" class="aboutusimg">
+
+                <img src="./src/images/a.png" alt="">
+            </picture> 
+        </div>
+
+        <div class="login">
+            <p>Bem vindo de volta</p>
+            <h2>Faça login na sua conta</h2>
+
+            <form action="" id="loginForm">
+                <label for="email" class="labelForm">E-mail</label><br>
+                <input type="email" id="email" name="email" placeholder="Insira seu e-mail" autocomplete="off" required><br>
+
+                <label for="password" class="labelForm">Senha</label><br>
+                <input type="password" name="password" id="passowrd" placeholder="Insira sua senha" autocomplete="off" required>
+
+                <div class="inputFooter">
+                    <input type="checkbox"  name="rememberme" id="rememberme">
+                    <label for="rememberme">Lembre de mim</label>
+                    <a href="#">Esqueceu sua senha?</a>
+                </div>
+
+                <button class="loginButton">Entrar</button>
+                <div class="googleLogin">
+                    
+                    <button><img src="./src/images/googleicon.png" alt=""> Ou faça login com google</button>
+                </div>
+
+                <div class="formFooter">
+                    <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

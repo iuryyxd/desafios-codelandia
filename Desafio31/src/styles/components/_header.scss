@@ -1,0 +1,60 @@
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+
+    background: var(--white-200);
+}
+
+header nav .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__menu {
+    display: flex;
+    column-gap: 36px;
+}
+
+.menu__item {
+    font-weight: var(--text-weight);
+    font-size: var(--default-fontsize);
+    color: var(--dark-200);
+}
+
+.header__hero {
+    width: 100%;
+    height: 400px;
+    background: url('../assets/bannerhero.png');
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.hero__img {
+    width: 250px;
+    z-index: 5;
+}
+
+.hero__gradient {
+    background: var(--red);
+    opacity: 0.7;
+    width: 100%;
+    height: 400px;
+
+    position: absolute;
+}
+

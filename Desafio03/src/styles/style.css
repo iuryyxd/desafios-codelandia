@@ -1,0 +1,216 @@
+@import url('./var.css');
+@import url('./responsive.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; text-decoration: none; border: none; }
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--placeholder-color);
+  opacity: 1; 
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: var(--placeholder-color);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: var(--placeholder-color);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    background-color: var(--header-color);
+    padding: 90px 104px;
+}
+
+.container div h2 {
+    font-family: var(--fontfamily-m);
+    font-weight: 400;
+    font-size: var(--fontsize-titleHeader);
+    color: var(--title-color);
+    width: 350px;
+}
+
+.container div p {
+    font-family: var(--fontfamily-l);
+    font-weight: 400;
+    font-size: var(--fontsize-subtitle);
+    color: var(--subtitle-color);
+    width: 360px;
+    line-height: 27px;
+    margin-top: 35px;
+}
+
+.container div button {
+    font-family: var(--fontfamily-l);
+    font-weight: 700;
+    font-size: var(--fontsize-subtitle);
+    color: #fff;
+    background-color: var(--button-color);
+    width: 155px;
+    height: 45px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 35px;
+    box-shadow: 0px 5px 5px 0px #1717171A;
+    transition: .5s all;
+}
+
+.container div button:hover {
+    color: var(--button-color);
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.container img {
+    width: 500px;
+    height: 359.75px;
+    position: absolute;
+    right: 104px;
+    top: 67px;
+    transform: translateY(-4%);
+    animation: floater 4s infinite;
+    transition: ease 0.5s;
+}
+
+@keyframes floater {
+    0%{transform: translateY(-4%);transition: ease 0.5s;}
+    50%{transform: translateY(4%);transition: ease 0.5s;}
+  }
+
+.cards-container {
+    padding: 150px 69px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1 {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.card2 {
+    display: flex;
+}
+
+.card {
+    width: 340px;
+    height: 423px;
+    box-shadow: 0px 0px 20px 0px #0000001A;
+    margin-bottom: 68px;
+}
+
+.card div {
+    width: 340px;
+    height: 219px;
+}
+
+.card h4 {
+    font-family: var(--fontfamily-m);
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--title-color);
+    margin-top: 24px;
+    margin-left: 30px;
+}
+
+.card p {
+    font-family: var(--fontfamily-l);
+    font-weight: 400;
+    font-size: var(--fontsize-subtitle);
+    width: 282px;
+    line-height: 26px;
+    color: var(--subtitle-color);
+    margin-top: 26px;
+    margin-left: 30px;
+}
+
+#c1 {
+    margin-left: 40px;
+}
+
+footer {
+    width: 100%;
+    height: 750px;
+    background-color: var(--header-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 85px 485px;
+}
+
+footer h3 {
+    font-family: var(--fontfamily-m);
+    font-weight: 400;
+    font-size: 32px;
+    color: var(--title-color);
+    margin-bottom: 60px;
+}
+
+footer form input {
+    width: 470px;
+    height: 65px;
+    background-color: #fff;
+    color: var(--subtitle-color);
+    margin-bottom: 15px;
+    border-radius: 6px;
+    padding: 0 15px;
+    transition: .1s all;
+    box-shadow: 0px 0px 20px 0px #0000001A;
+    border: 0px solid var(--button-color);
+}
+
+footer form input:focus {
+    width: 470px;
+    height: 65px;
+    background-color: #fff;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    padding: 0 15px;
+    outline: none;
+    border: 2px solid var(--button-color);
+}
+
+footer form textarea {
+    width: 470px;
+    height: 165px;
+    background-color: #fff;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    padding: 21px 15px;
+    transition: .1s all;
+    color: var(--subtitle-color);
+    border: 0px solid var(--button-color);
+    box-shadow: 0px 0px 20px 0px #0000001A;
+}
+
+footer form textarea:focus {
+    border: 2px solid var(--button-color);
+    outline: none;
+}
+
+footer form button {
+    width: 471px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: var(--button-color);
+    color: #fff;
+    font-family: var(--fontfamily-l);
+    font-weight: 700;
+    font-size: 17px;
+    box-shadow: 0px 0px 20px 0px #0000001A;
+    transition: .3s all;
+}
+
+footer form button:hover{
+    background-color: #fff;
+    color: var(--button-color);
+    cursor: pointer;
+}
+

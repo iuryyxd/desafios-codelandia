@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=B612:wght@400;700&family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=B612:wght@400;700&display=swap');
+
+:root {
+    --yellow: #FFA800;
+    --blue: #0072D2;
+    --dark: #131318;
+    --dark-blue: #19191F;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+* {
+    margin: 0; padding: 0; box-sizing: border-box; outline: none; border: none;
+}
+
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+    background: url('../images/Loki-bg.svg') no-repeat;
+    background-size: cover;
+}
+
+/* Cabeçalho */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.1875rem;
+    margin-top: 2.1875rem;
+}
+
+header h4 {
+    font-family: 'B612', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #fff;
+}
+
+header h1 {
+    font-family: 'B612', sans-serif;
+    font-weight: 700;
+    font-size: 6rem;
+    color: #fff;
+}
+
+/* Container */
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 60vh;
+}
+
+.container {
+    max-width: 85%;
+    display: flex;
+    gap: 3.9375rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.cape {
+    width: 16vw;
+    height: 50vh;
+}
+
+.rightContainer {
+    width: 50vw;
+}
+
+.desc {
+    color: #fff;
+    font-family: 'B612', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    max-width: 48vw;
+}
+
+.info {
+    width: 100vw;
+    display: flex;
+    margin-top: 2.1875rem;
+    align-items: center;
+}
+
+.info p {
+    width: 6vw;
+    color: #fff;
+    font-family: 'B612', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    margin-right: 6.25rem;
+}
+
+.star {
+    width: 2.5vw;
+    margin-left: 0.9375rem;
+}
+
+.info span {
+    color: #fff;
+    font-family: 'B612', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    margin-left: 6.25rem;
+}
+
+.button {
+    position: relative;
+    margin-top: 4rem;
+    display: flex;
+    gap: 1.3125rem;
+}
+
+.watchnow {
+    display: flex;
+    width: 11.5rem;
+    height: 3.25rem;
+    background-color: var(--blue);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+}
+
+.trailer {
+    width: 7.1875rem;
+    height: 3.25rem;
+    background-color: var(--dark);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+}

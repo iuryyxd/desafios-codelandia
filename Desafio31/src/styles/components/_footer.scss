@@ -1,0 +1,42 @@
+footer {
+    margin-top: 100px;
+    background: var(--red);
+    height: 338px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+footer .content {
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img {
+    width: 200px;
+}
+
+.footer__links {
+    display: flex;
+    gap: 100px;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.list__title {
+    font-weight: var(--title-weight);
+    font-size: 1.2rem;
+    color: var(--white);  
+    margin-bottom: 8px;  
+}
+
+.list__item a {
+    font-weight: var(--text-weight);
+    font-size: .8rem;
+    color: var(--white-200);
+}

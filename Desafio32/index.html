@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mine</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/styles/styles.css">
+
+    <!-- SCRIPT -->
+    <script src="./src/js/index.js" defer></script>
+</head>
+<body>
+    
+    <!-- HEADER -->
+    <header class="header">
+        <img src="./src/assets/logo-with-text.svg" alt="Mine logo" class="header__logo">
+        
+        <nav class="header__nav ">
+            <div class="menu__toggle" onclick="openMenu()">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+
+            <ul class="menu__list">
+                <li class="list__item login"><a href="#"">ENTRAR</a></li>
+                <li class="list__item"><a href="#"">FORUM</a></li>
+                <li class="list__item"><a href="#"">SOBRE</a></li>
+                <li class="list__item"><a href="#"">MOJANG</a></li>
+                <li class="list__item"><a href="#"">PERGUNTAS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN - FORM -->
+    <main class="main">
+        <form method="dialog" class="main__form" name="form">
+            <img src="./src/assets/logo.svg" class="form__logo">
+
+            <label for="email" class="form__label">E-mail</label>
+            <input type="text" class="form__input" placeholder="seuemail@gmail.com" name="email">
+
+            <label for="password" class="form__label">Senha</label>
+            <input type="password" class="form__input" placeholder="*******" name="password">
+
+            <div class="form__remember">
+                <input type="checkbox" name="checkbox" id="checkbox" class="form__checkbox">
+                <label for="checkbox" class="form__label checkbox">Lembrar minha senha</label>
+            </div>
+
+            <button form="form" class="form__button">Entrar na conta</button>
+
+            <a class="form__footer">Esqueceu a senha?</a>
+        </form>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__item">
+            <img src="./src/assets/power.svg" alt="power icon" class="item__img">
+            <span class="item__text">Jogue também offline</span>
+        </div>
+        <div class="footer__item">
+            <img src="./src/assets/user.svg" alt="user icon" class="item__img">
+            <span class="item__text">67 jogadores</span>
+        </div>
+        <div class="footer__item">
+            <img src="./src/assets/game-controller.svg" alt="game control icon" class="item__img">
+            <span class="item__text">Compatível com uso remoto</span>
+        </div>
+        <div class="footer__item">
+            <img src="./src/assets/vibrate.svg" alt="phone vibrating icon" class="item__img">
+            <span class="item__text">Vibração no controle</span>
+        </div>
+        <div class="footer__item">
+            <img src="./src/assets/kid.svg" alt="kid icon" class="item__img">
+            <span class="item__text">Permitido para menores</span>
+        </div>
+    </footer>
+
+
+    <!-- BACKGROUND GRADIENTS -->
+    <div class="header__gradient"></div>
+    <div class="footer__gradient"></div>
+</body>
+</html>

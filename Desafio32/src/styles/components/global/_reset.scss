@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Kufam:wght@400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+}
+
+body {
+    width: 100%;
+    background: linear-gradient(0deg, rgba(18, 18, 18, 0.6) 0%, rgba(18, 18, 18, 0.7) 50%, rgba(18, 18, 18, 0) 100%), url('../assets/wallpaper.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header__gradient {
+    width: 100%;
+    height: 366px;
+    background: url('../assets/Gradient-header.svg') no-repeat;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.footer__gradient {
+    width: 100%;
+    height: 366px;
+    background: url('../assets/gradient-footer.svg') no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+input, button {
+    border: none;
+    outline: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+::placeholder {
+  color: #BAACAC;
+  opacity: 1;
+}
+
+// Media Queries
+
+@media screen and (max-width: 665px) {
+    body {
+        height: auto;
+        background: linear-gradient(0deg, rgba(18, 18, 18, 0.6) 0%, rgba(18, 18, 18, 0.7) 50%, rgba(18, 18, 18, 0) 100%), url('../assets/wallpaper.png') no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+
+    .footer__gradient {
+        bottom: -38px;
+    }
+}

@@ -1,0 +1,37 @@
+.footer {
+    display: flex;
+    margin-top: 12.6875rem;
+    justify-content: center;
+    gap: 2.625rem;
+    margin-bottom: 2.5rem;
+
+    .footer__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.375rem;
+        
+        .item__text {
+            font-family: var(--fk);
+            font-weight: var(--text-weight);
+            font-size: 1.125rem;
+            color: var(--white);            
+        }
+    }
+}
+
+@media screen and (max-width: 1196px) {
+    .footer {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 665px) {
+    .footer {
+        flex-direction: column;
+        gap: 3.25rem;
+        padding-inline: 1.625rem;
+        margin-top: 3.25rem;
+        margin-bottom: 2.5rem;
+    }
+}

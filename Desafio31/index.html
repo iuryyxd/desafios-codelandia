@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copa do Mundo</title>
+
+    <link rel="stylesheet" href="./src/styles/style.css">
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js" defer></script>
+</head>
+<body>
+    
+    <header class="header">
+        <nav class="header__nav">
+            <div class="nav__content content">
+                <img src="./src/assets/logo-fifa.svg" alt="logo da fifa" class="nav__logo">
+
+                <ul class="nav__menu">
+                    <li><a href="#" class="menu__item">Início</a></li>
+                    <li><a href="#groups" class="menu__item">Grupos</a></li>
+                    <li><a href="#matchs" class="menu__item">Partidas</a></li>
+                    <li><a href="./src/pages/watch.html" class="menu__item">Assistir</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="header__hero">
+            <img src="./src/assets/logo-fifa-world-cup.svg" alt="logo da copa do mundo 2022" class="hero__img">
+            <div class="hero__gradient"></div>
+        </div>
+    </header>
+
+    <section class="section__groups content" id="groups">
+        <h1 class="groups__title">GRUPOS</h1>
+
+        <div class="groups__cards">
+            <div class="group__card">
+                <h3 class="card__title">GRUPO A</h3>
+                <div class="card__countrys">
+                    <div class="country">
+                        <img src="./src/assets/Qatar.svg" alt="Bandeira do Qatar" class="country__flag">
+                        <span class="country__name">Qatar</span>
+                    </div>
+
+                    <div class="country">
+                        <img src="./src/assets/Equador.svg" alt="Bandeira do Equador" class="country__flag">
+                        <span class="country__name">Equador</span>
+                    </div>
+
+                    <div class="country">
+                        <img src="./src/assets/Senegal.svg" alt="Bandeira do Senegal" class="country__flag">
+                        <span class="country__name">Senegal</span>
+                    </div>
+
+                    <div class="country">
+                        <img src="./src/assets/Holanda.svg" alt="Bandeira da Holanda" class="country__flag">
+                        <span class="country__name">Holanda</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group__card">
+                <h3 class="card__title">GRUPO B</h3>
+                <div class="card__countrys">
+                    <div class="country">
+                        <img src="./src/assets/Inglaterra.svg" alt="Bandeira da Inglaterra" class="country__flag">
+                        <span class="country__name">Inglaterra</span>
+                    </div>
+
+                    <div class="country">
+                        <img src="./src/assets/Iran.svg" alt="Bandeira do Irã" class="country__flag">
+                        <span class="country__name">Irã</span>
+                    </div>
+
+                    <div class="country">
+                        <img src="./src/assets/usa.svg" alt="Bandeira dos Estados Unidos" class="country__flag">
+                        <span class="country__name">Estados Unidos</span>
+                    </div>
+
+                    <div class="country">
+                        <img src="./src/assets/pais_de_gales.svg" alt="Bandeira de País de Gales" class="country__flag">
+                        <span class="country__name">País de Gales</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group__card">
+                <h3 class="card__title">GRUPO C</h3>
+                <div class="card__countrys">
+                    <div class="country">
+                        <img src="./src/assets/Argentina.svg" alt="Bandeira da Argentina" class="country__flag">
+                        <span class="country__name">Argentina</span>
+                    </div>
+
+                    <div class="country">
+                        <img src="./src/assets/arabia_saudita.svg" alt="Bandeira da Arábia Saudita" class="country__flag">
+                        <span class="country__name">Arábia Saudita</span>
+                    </div>
+
+                    <div class="country">
+                        <img src="./src/assets/Mexico.svg" alt="Bandeira do México" class="country__flag">
+                        <span class="country__name">México</span>
+                    </div>
+
+                    <div class="country">
+                        <img src="./src/assets/Polonia.svg" alt="Bandeira da Polônia" class="country__flag">
+                        <span class="country__name">Polônia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="groups__arrows">
+            <button class="arrow_left arrow"><box-icon name='chevron-left' color='#8d1b3d'></box-icon></button>
+            <button class="arrow_right arrow"><box-icon name='chevron-right' color='#8d1b3d'></box-icon></button>
+        </div>
+        
+    </section>
+
+    <section class="section__matchs content" id="matchs">
+        <h1 class="matchs__title">PRÓXIMOS JOGOS</h1>
+
+        <div class="nexts__matchs">
+            <div class="match">
+                <div class="match__country">
+                    <img src="./src/assets/Qatar.svg" alt="Bandeira do Qatar" class="match__flag">
+                    <span class="match__country-name">Qatar</span>
+                </div>
+
+                <span class="match__date">20/11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13:00</span>
+
+                <div class="match__country right">
+                    <span class="match__country-name">Equador</span>
+                    <img src="./src/assets/Equador.svg" alt="Bandeira do Equador" class="match__flag">
+                </div>
+            </div>
+
+            <div class="match">
+                <div class="match__country">
+                    <img src="./src/assets/Inglaterra.svg" alt="Bandeira da Inglaterra" class="match__flag">
+                    <span class="match__country-name">Inglaterra</span>
+                </div>
+
+                <span class="match__date">21/11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10:00</span>
+
+                <div class="match__country right">
+                    <span class="match__country-name">Irã</span>
+                    <img src="./src/assets/Iran.svg" alt="Bandeira do Irã" class="match__flag">
+                </div>
+            </div>
+
+            <div class="match">
+                <div class="match__country">
+                    <img src="./src/assets/Senegal.svg" alt="Bandeira do Senegal" class="match__flag">
+                    <span class="match__country-name">Senegal</span>
+                </div>
+
+                <span class="match__date">21/11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13:00</span>
+
+                <div class="match__country right">
+                    <span class="match__country-name">Holanda</span>
+                    <img src="./src/assets/Holanda.svg" alt="Bandeira da Holanda" class="match__flag">
+                </div>
+            </div>
+
+            <div class="match">
+                <div class="match__country">
+                    <img src="./src/assets/usa.svg" alt="Bandeira dos Estados Unidos" class="match__flag">
+                    <span class="match__country-name">USA</span>
+                </div>
+
+                <span class="match__date">21/11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16:00</span>
+
+                <div class="match__country right">
+                    <span class="match__country-name">País de Gales</span>
+                    <img src="./src/assets/pais_de_gales.svg" alt="Bandeira do País de Gales" class="match__flag">
+                </div>
+            </div>
+
+            <div class="match">
+                <div class="match__country">
+                    <img src="./src/assets/Argentina.svg" alt="Bandeira da Argentina" class="match__flag">
+                    <span class="match__country-name">Argentina</span>
+                </div>
+
+                <span class="match__date">22/11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;07:00</span>
+
+                <div class="match__country right">
+                    <span class="match__country-name">Arábia Saudita</span>
+                    <img src="./src/assets/arabia_saudita.svg" alt="Bandeira da Arábia Saudita" class="match__flag">
+                </div>
+            </div>
+
+           
+        </div>
+
+        <button class="allmatchs-button">VER TODOS OS JOGOS</button>
+    </section>
+
+    <footer>
+        <div class="content">
+            <div class="footer__links">
+                <ul class="footer__list">
+                    <h2 class="list__title">Redes Sociais</h2>
+                    <li class="list__item"><a href="#">Facebook</a></li>
+                    <li class="list__item"><a href="#">Instagram</a></li>
+                    <li class="list__item"><a href="#">Twitter</a></li>
+                    <li class="list__item"><a href="#">Youtube</a></li>
+                </ul>
+    
+                <ul class="footer__list">
+                    <h2 class="list__title">Legais</h2>
+                    <li class="list__item"><a href="#">Sobre</a></li>
+                    <li class="list__item"><a href="#">Licença</a></li>
+                    <li class="list__item"><a href="#">Contato</a></li>
+                    <li class="list__item"><a href="#">Política de privacidade</a></li>
+                </ul>
+    
+                <ul class="footer__list">
+                    <h2 class="list__title">Fifa</h2>
+                    <li class="list__item"><a href="#">Serviços</a></li>
+                    <li class="list__item"><a href="#">Patrocinadores</a></li>
+                </ul>
+            </div>
+            
+            <img src="./src/assets/logo-fifa-copa.svg" alt="Logo da fifa e da copa do mundo 2022">
+        </div>
+    </footer>
+
+</body>
+</html>

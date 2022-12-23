@@ -1,0 +1,20 @@
+@media screen and (max-width: 1068px) {
+    .content {
+        max-width: 765px;
+    }
+
+    .footer__links {
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .content {
+        max-width: 670px;
+    }
+
+    .footer__links {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+}
