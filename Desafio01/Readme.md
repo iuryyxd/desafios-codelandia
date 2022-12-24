@@ -4,7 +4,7 @@ Clique [aqui](https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codel
 
 ## Demonstração
 
-Deploy: https://blogdacodelandia.netlify.app/
+Deploy: https://iuryyxd.github.io/desafios-codelandia/Desafio01/
 
 ## Tecnologias Utilizadas
 

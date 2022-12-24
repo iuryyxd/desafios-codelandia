@@ -4,7 +4,7 @@ Cliquei [aqui](https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Code
 
 ## Demonstração
 
-Deploy: https://projetoscodelandia.netlify.app/
+Deploy: https://iuryyxd.github.io/desafios-codelandia/Desafio22/
 
 ## Tecnologias Utilizadas
 

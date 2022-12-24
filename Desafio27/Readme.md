@@ -4,7 +4,7 @@ Cliquei [aqui](https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Code
 
 ## Demonstração
 
-Deploy: https://foodjpwebsite.netlify.app/
+Deploy: https://iuryyxd.github.io/desafios-codelandia/Desafio27/
 
 ## Tecnologias Utilizadas
 
